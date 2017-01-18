@@ -1,3 +1,5 @@
+<!--Haz un programa que pida al usuario que introduzca una nota, y que a
+continuación escriba un mensaje diciendo aprobado o suspendido.-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +7,7 @@
     <title></title>
     <script type="text/javascript">
     var nota;
-    nota = prompt("Introduce una nota;","");
+    nota = prompt("Introduce una nota: ");
 
     if(isNaN(nota)==false && (nota != "")) {
       nota = parseInt(nota);
@@ -21,7 +23,7 @@
       }
     }
     else{
-      document.write("No ha introducido una nota ");
+      document.write("No ha introducido una nota correcta");
     }
     </script>
   </head>

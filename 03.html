@@ -1,3 +1,6 @@
+<!--Haz  un programa que pida al usuario que introduzca una nota y a continuación
+escriba un mensaje diciendo “Sobresaliente”, “Notable”, “Bien”, “Suficiente” o
+“Insuficiente”. -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +8,7 @@
     <title></title>
     <script type="text/javascript">
       var nota;
-      nota = prompt("Introduce nota")
+      nota = prompt("Introduce una nota: ")
       if(isNaN(nota)==true && nota !== ""){
         document.write("Valor incorrecto")
       }else if (nota < 5){
@@ -19,7 +22,7 @@
       }else if (nota >= 7 && nota < 9){
         document.write("Notable");
       }else if (nota >=9){
-        document.write("Excelente");
+        document.write("Sobresaleinte");
       }
     </script>
   </head>
