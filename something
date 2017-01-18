@@ -1,0 +1,19 @@
+var indexName;
+  for(var i = 0 ; i < contacts.length; i++){
+    
+    if(contacts[i].hasOwnProperty(firstName.firstName)){
+      
+     indexName=i;
+      
+    }else{
+      return "No such contact";
+    }
+  }  
+  
+  for(var j = 0; j < contacts.length; j++)
+  if(contacts[indexName].hasOwnProperty([j].prop)){
+    return contacts[indexName].[j].prop;
+  }else{
+    return "No such property";
+  }
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    var nota;
+    nota = prompt("Introduce una nota;","");
+
+    if(isNaN(nota)==false && (nota != "")) {
+      nota = parseInt(nota);
+      if(nota >= 0 && nota <= 10){
+        if(nota <5 ){
+          document.write("Suspenso");
+        }else {
+          document.write("Aprobado");
+        }
+      }
+      else{
+        document.write("Debe introducir un número entre 0 y 10");
+      }
+    }
+    else{
+      document.write("No ha introducido una nota ");
+    }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

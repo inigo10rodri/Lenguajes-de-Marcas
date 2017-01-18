@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var nota;
+      nota = prompt("Introduce nota")
+      if(isNaN(nota)==true && nota !== ""){
+        document.write("Valor incorrecto")
+      }else if (nota < 5){
+        document.write("Insuficiente");
+      }else if (nota == 5){
+        document.write("Suficiente");
+
+      }else if (nota >= 6 && nota < 7){
+        document.write("Bien");
+
+      }else if (nota >= 7 && nota < 9){
+        document.write("Notable");
+      }else if (nota >=9){
+        document.write("Excelente");
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
