@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Titulo</title>
+		<script type="text/javascript"> 
+
+		var numero;
+		var mayor;
+		var contador;
+
+		contador = 1;
+		mayor = -999;
+
+		while ( contador <= 3) {
+			numero = prompt("Intruduce el " + contador + " º número ",""); 
+			if ( isNaN(numero) == true ) {
+				alert("No ha introcucido un número.");
+			}
+			else {
+				numero = parseInt(numero);	
+				if (numero > mayor) {
+					mayor = numero;
+				}
+				contador = contador+ 1;
+			}
+		}
+		
+	 	document.write("El número más alto introducido es: " + mayor);
+			
+		</script> 
+	</head>
+	<body>
+
+	</body>
+</html>

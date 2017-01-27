@@ -1,0 +1,43 @@
+<!--Haz el programa 12. utilizando una función que dado el día de la semana en
+número devuelva el día de la semana en texto.  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+		var dia;
+		var diaSemana;
+		dia=prompt("Introduce el dia de la semana")
+		switch(parseInt(dia)){
+			case 1:
+				diaSemana="Lunes";
+				break;
+			case 2:
+				diaSemana="Martes";
+				break;
+			case 3:
+				diaSemana="Miercoles";
+				break;
+			case 4:
+				diaSemana="Jueves";
+				break;
+			case 5:
+				diaSemana="Viernes";
+				break;
+			case 6:
+				diaSemana="Sabado";
+				break;
+			case 7:
+				diaSemana="Domingo";
+				break;
+			default:
+				diaSemana="Este dia no existe(Introduce un dia entre 1 y 7)";	
+		}
+		document.write(diaSemana);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
