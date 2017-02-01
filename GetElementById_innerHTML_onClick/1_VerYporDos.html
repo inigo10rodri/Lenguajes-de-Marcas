@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript 1</title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+            function ver1(){
+                 document.getElementById("num").value=1;
+            }
+            
+            function ver2(){
+                 document.getElementById("num").value=2;
+            }
+            
+            function ver3(){
+                 document.getElementById("num").value=3;
+            }
+
+            function doble(){
+                var a=parseInt(document.getElementById("num").value);
+                document.getElementById("pordos").value=2*a;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table border=1>
+            <tr>
+                <td><input type="text" id="num"/></td>
+                <td><input type="text" id="pordos"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="num1" value="ver 1" onclick="ver1()"/>
+                    <input type="button" id="num2" value="ver 2" onclick="ver2()"/>
+                    <input type="button" id="num3" value="ver 3" onclick="ver3()"/>
+                </td>
+                <td>
+                    <input type="button" id="boton_pordos" value="por 2" onclick="doble()"/>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

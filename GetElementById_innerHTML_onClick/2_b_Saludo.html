@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript 2</title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+            var contador;
+            contador =1;
+            function saludo(){
+                alert("¡Hola Mundo!");
+                document.getElementById("boton1").value="Vuelve a saludar";
+                document.getElementById("mensaje").innerHTML= "Has saludado " + contador + " veces";
+                contador= contador + 1;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" id="boton1" value="¡saluda!" onclick="saludo()"/>
+        <div id="mensaje">Estoy esperando a que pulses el botón</div>
+    </body>
+</html>
