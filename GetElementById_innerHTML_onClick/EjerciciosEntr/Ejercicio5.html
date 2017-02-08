@@ -5,18 +5,19 @@
 	<title>JavaScript 5</title>
 	<script type="text/javascript">
 		function contador(){
-			var numero;
-			numero=document.getElementById("num").value;
-			numero=parseInt(numero);			
+			var cadena="";
+			var numero=parseInt(document.getElementById("num").value);			
 			for(var i=1;i<=numero;i++){
-				document.write("Contador: "+i+"<br/>");
+				/*de esta manera no desaparece el enunciado, pero con document.write(cadena="<h2>"+"Contador: "+i+"<h2>+"<br>"*/
+				cadena = cadena +"Contador: "+i+ "<br/>";
 			}
+			document.getElementById("resultado").innerHTML=cadena;
 		}
 	</script>
 </head>
 <body>
 	<input type="number" id="num"/>
 	<input type="button" id="repetir" value="Repetir!" onclick="contador()"/>	
-	<div id="mensaje"></div>
+	<div id="resultado"></div>
 </body>
 </html>

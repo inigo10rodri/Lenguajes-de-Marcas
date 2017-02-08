@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript 9</title>
+	<script type="text/javascript">
+			function tabla(){
+		 	var numcol,numfil;
+               numcol=document.getElementById("num1").value;
+               numfil=document.getElementById("num2").value;
+              cadena="";
+              cadena=cadena + "<table border='1'>";
+             for(var i=1;i<=numfil;i++) {
+             	cadena=cadena + "<tr>";
+            	for(var j=1;j<=numcol;j++){
+            		cadena=cadena + "<td>A<td>";
+            	}
+            	cadena=cadena +"</tr>";
+             }
+      cadena=cadena +"</table>";
+      document.write(cadena);
+	</script>
+	<style>
+		.centrar{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="centrar">
+		<h1>Tablas dinámicas</h1>
+		<label>X(columnas):</label><input type="text" id="num1"/><br><br>
+		<label>Y(filas):</label><input type="text" id="num2" /><br/><br/>
+		<input type="button" id="tabla" value="Crear tabla" onclick="tabla()">
+	</div>
+</body>
+</html>
