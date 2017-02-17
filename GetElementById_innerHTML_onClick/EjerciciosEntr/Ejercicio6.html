@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 9</title>
+    <script type="text/javascript">
+           function Adivinar(){
+                var n;
+                n=parseInt(document.getElementById("num").value);
+                cont=cont+1; 
+                if(n==numeroAdivinar){
+                    alert("Enhorabuena has adivinado el numero");
+                }else{
+                    if(n>numeroAdivinar){
+                        alert("El numero secreto es menor. Intentalo de nuevo.")
+                    }else{
+                        alert("El numero es mayor. Intentalo de nuevo.")
+                    }
+                    document.getElementById("intentos").innerHTML="<h2>"+cont+"</h2>";
+                } 
+           }
+           function Reinicia(){            
+            cont=0;
+            document.getElementById("num").value="0";
+            numeroAdivinar=Math.floor((Math.random()*100)+1);
+            document.getElementById("intentos").innerHTML="<h2>"+cont+"</h2>";
+           }
+            var numeroAdivinar=Math.floor((Math.random()*100)+1);
+            var cont=0; 
+    </script>
+    <style>
+        .centrar{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="centrar">
+        <h1>EL JUEGO DE ADIVINAR UN NUMERO</h1>
+        <h4>¿Cual crees que es el numero secreto? escribelo:</h4>
+        <input type="text" id="num"/><br><br>
+        <input type="button" id="adivinar" value="Comprueba si has acertado" onclick="Adivinar()">
+        <input type="button" id="reiniciar" value="Reiniciar el juego" onclick="Reinicia()">
+        <h3>Nº intentos:</h3>
+        <div id="intentos"></div>
+    </div>
+</body>
+</html>
