@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+      function mostrarproducto(){
+      	var producto = document.getElementById("entradaproducto").value;
+      	switch(producto){
+      		case 'ordenador':
+      		document.getElementById("contenido").innerHTML='<img src="./images/c00.jpg" width="100" height="100" id="mainv" >';
+      		break;
+      		case 'tablet':
+      		document.getElementById("contenido").innerHTML='<img src="./images/t00.jpg" width="100" height="100" id="mainv" >';
+      		break;
+      		case 'videojuego':
+      		document.getElementById("contenido").innerHTML='<img src="./images/v00.jpg" width="100" height="100" id="mainv" >';
+      		break;
+      	}        
+      }
+    </script>
+    <style>
+    .centrar{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+	<div class="centrar">
+		<h1>Tres productos</h1>
+		<br/>
+		<input id="entradaproducto" list="listaproducto" placeholder="Selecciona un producto" oninput="mostrarproducto()">
+		<datalist id="listaproducto">
+			<option value="ordenador"></option>
+			<option value="tablet"></option>
+			<option value="videojuego"></option>			
+		</datalist>
+		<br/> <br/>
+			<div id="contenido"></div>			
+	</div>	
+</body>
+</html>

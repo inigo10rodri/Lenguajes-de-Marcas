@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+      function mostrarproducto(){
+      	var producto = document.getElementById("entradaproducto").value;
+      	switch(producto){
+      		case 'ordenador':
+      		document.getElementById("ordenador").style.visibility='visible';
+      		document.getElementById("tablet").style.visibility='hidden';
+      		document.getElementById("videojuego").style.visibility='hidden';
+      		break;
+      		case 'tablet':
+      		document.getElementById("tablet").style.visibility='visible';
+      		document.getElementById("ordenador").style.visibility='hidden';
+      		document.getElementById("videojuego").style.visibility='hidden';
+      		break;
+      		case 'videojuego':
+      		document.getElementById("videojuego").style.visibility='visible';
+      		document.getElementById("ordenador").style.visibility='hidden';
+      		document.getElementById("tablet").style.visibility='hidden';
+      		break;
+      	}        
+      }
+    </script>
+     <style>
+    .centrar{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+	<div class="centrar">
+		<h1>Tres productos</h1>
+		<input id="entradaproducto" list="listaproducto" placeholder="Selecciona un producto" oninput="mostrarproducto()">
+		<datalist id="listaproducto">
+			<option value="ordenador"></option>
+			<option value="tablet"></option>
+			<option value="videojuego"></option>			
+		</datalist>
+			<div id="ordenador">
+				<img src="./images/c00.jpg" width="100" height="100" id="inicioc">
+			</div>
+			<div id="tablet">
+				<img src="./images/t00.jpg" width="100" height="100" id="iniciot">
+			</div>
+			<div id="videojuego">
+				<img src="./images/v00.jpg" width="100" height="100" id="iniciov">
+			</div>
+	</div>
+
+	
+</body>
+</html>
