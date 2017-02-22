@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lanzamiento de dado</title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                text-align: center;
+                background-image: url("images/back.jpg");
+                
+            }
+            
+            table{
+                margin:auto;
+            }
+            h1{
+                color:#fe00ff;
+            }
+            
+        </style>
+        <script type="text/javascript">
+                  
+            function lanzar(){
+
+                var numero=Math.ceil(Math.random()*6);  
+
+                switch (numero) {
+                    case 1:
+                        document.getElementById("imagendado").innerHTML = '<img src="images/1.png" width=300 height=300 />';
+                        break;
+                    case 2:
+                        document.getElementById("imagendado").innerHTML = '<img src="images/2.png" width=300 height=300 />';
+                        break;
+                    case 3:
+                        document.getElementById("imagendado").innerHTML = '<img src="images/3.png" width=300 height=300 />';
+                        break;
+                    case 4:
+                        document.getElementById("imagendado").innerHTML = '<img src="images/4.png" width=300 height=300 />';
+                         break;
+                    case 5:
+                        document.getElementById("imagendado").innerHTML = '<img src="images/5.png" width=300 height=300 />';
+                        break;  
+                    case 6:
+                        document.getElementById("imagendado").innerHTML = '<img src="images/6.png" width=300 height=300 />';
+                        break;               
+                }
+
+                /* En vez de utilizar el switch
+                document.getElementById("imagendado").innerHTML = '<img src="images/'+numero+'.png" width=300 height=300 />';
+                */
+
+            }
+
+            function reset(){
+                document.getElementById("imagendado").innerHTML = '<img src="images/dado.jpg" width=300 height=300 />';
+            }
+        
+        </script>
+    </head>
+    <body>
+        <h1>El Juego del Dado</h1>
+
+        <table border="0">
+            <tr>
+                <td id="imagendado"> <img src="images/dado.jpg" width=300 height=300 /> </td>
+            </tr>
+            <tr>
+                <td id="tirar"> <input type="button" value="Lanza el dado" onclick="lanzar()"/> </td>
+            </tr>
+            <tr>
+                <td id="iniciar"> <input type="button" value="Reset" onclick="reset()"/> </td>
+            </tr>
+        </table>
+
+    </body>
+</html>

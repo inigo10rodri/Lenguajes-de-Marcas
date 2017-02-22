@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lanzamiento de dado</title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                text-align: center;
+                background-image: url("images/back.jpg");
+                
+            }
+            
+            table{
+                margin:auto;
+            }
+            h1{
+                color:#fe00ff;
+            }
+            
+        </style>
+        <script type="text/javascript">
+                  
+            function lanzar(){
+
+                var numero=Math.ceil(Math.random()*6);  
+
+                switch (numero) {
+                    case 1:
+                        document.getElementById("imagendado").src = "images/1.png";
+                        break;
+                        document.getElementById("imagendado").src = "images/2.png";
+
+                        break;
+                    case 3:
+                        document.getElementById("imagendado").src = "images/3.png";
+
+                        break;
+                    case 4:
+                        document.getElementById("imagendado").src = "images/4.png";
+
+                         break;
+                    case 5:
+                        document.getElementById("imagendado").src = "images/5.png";
+
+                        break;  
+                    case 6:
+                        document.getElementById("imagendado").src = "images/6.png";
+
+                        break;               
+                }
+
+                /* En vez de utilizar el switch
+                document.getElementById("imagendado").src = "images/'+numero+'.png";
+                */
+
+            }
+
+            function reset(){
+                document.getElementById("imagendado").src = "images/dado.jpg";
+            }
+        
+        </script>
+    </head>
+    <body>
+        <h1>El Juego del Dado</h1>
+
+        <table border="0">
+            <tr>
+                <td> <img src="images/dado.jpg" id="imagendado" width=300 height=300 /> </td>
+            </tr>
+            <tr>
+                <td id="tirar"> <input type="button" value="Lanza el dado" onclick="lanzar()"/> </td>
+            </tr>
+            <tr>
+                <td id="iniciar"> <input type="button" value="Reset" onclick="reset()"/> </td>
+            </tr>
+        </table>
+
+    </body>
+</html>
