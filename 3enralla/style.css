@@ -1,0 +1,14 @@
+body {
+	text-align: center;
+    margin: 0px;
+    background-image: url(images/back.jpg);	
+}
+
+table{
+	margin: auto;
+}
+a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
