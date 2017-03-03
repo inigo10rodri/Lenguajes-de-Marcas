@@ -5,35 +5,48 @@
 	<title>3 en raya</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script>
-	var contclicks=0;
-		function Seleccionar(a,b){
-			contclicks=contclicks+1;
-			if(contclicks<9){
-				var x=ab;
-			}
-		}
+	var click=0;
+	var jugador1=0;
+	var jugador2=0;
+	function cambiar(celda) {		
+		 	if(click==0){
+		 		document.getElementById('jugador').innerHTML = "<h1> Le toca al jugador2</h1>";
+  				document.getElementById('cambio'+celda).innerHTML = "<img src='images/O.jpg' width='100px' height='100px'/>";
+  			jugador1++;
+  			click=1;
+  			}else{
+  				document.getElementById('jugador').innerHTML = "<h1> Le toca al jugador1</h1>";
+  				document.getElementById('cambio'+celda).innerHTML = "<img src='images/X.jpg' width='100px' height='100px'/>";  		
+  			jugador2++;		
+  			click=0;
+  			}
+  			if (jugador1==3){
+  				alert("Ha ganado el jugador1");
+  			}if (jugador2==3){
+  				alert("Ha ganado el jugador2");
+  			}
+ 		}  
 	</script>
 </head>
 <body>
 	<h1>Tres en Raya</h1>
-	<div class="tabla">
 	<table border="1px">
 		<tr>
-			<td height="100px" width="100px" id="celda1"><a href="#" onclick="Seleccionar(0,0)"></a></td>
-			<td height="100px" width="100px" id="celda2"><a href="#" onclick="Seleccionar(0,1)"></a></td>
-			<td height="100px" width="100px" id="celda3"><a href="#" onclick="Seleccionar(0,2)"></a></td>
+			<td height="100px" width="100px" id="cambio1" onclick="cambiar(1)"></td>
+			<td height="100px" width="100px" id="cambio2" onclick="cambiar(2)"></td>
+			<td height="100px" width="100px" id="cambio3" onclick="cambiar(3)"></td>
 		</tr>
 		<tr>
-			<td height="100px" width="100px" id="celda4"><a href="#" onclick="Seleccionar(1,0)"></a></td>
-			<td height="100px" width="100px" id="celda5"><a href="#" onclick="Seleccionar(1,1)"></a></td>
-			<td height="100px" width="100px" id="celda6"><a href="#" onclick="Seleccionar(1,2)"></a></td>
+			<td height="100px" width="100px" id="cambio4" onclick="cambiar(4)"></td>
+			<td height="100px" width="100px" id="cambio5" onclick="cambiar(5)"></td>
+			<td height="100px" width="100px" id="cambio6" onclick="cambiar(6)"></td>
 		</tr>
 		<tr>
-			<td height="100px" width="100px" id="celda7"><a href="#" onclick="Seleccionar(2,0)"></a></td>
-			<td height="100px" width="100px" id="celda8"><a href="#" onclick="Seleccionar(2,1)"></a></td>
-			<td height="100px" width="100px" id="celda9"><a href="#" onclick="Seleccionar(2,2)"></a></td>
+			<td height="100px" width="100px" id="cambio7" onclick="cambiar(7)"></td>
+			<td height="100px" width="100px" id="cambio8" onclick="cambiar(8)"></td>
+			<td height="100px" width="100px" id="cambio9" onclick="cambiar(9)"></td>
 		</tr>
 	</table>	
-	</div>
+	<div id="jugador"><h1> Le toca al jugador1</h1></div>
 </body>
 </html>
