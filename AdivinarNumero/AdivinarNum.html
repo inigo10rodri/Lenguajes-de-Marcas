@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Javascript 9</title>
+
     <script type="text/javascript">
-           function Adivinar(){
-                var n;
-                n=parseInt(document.getElementById("num").value);
-                cont=cont+1; 
-                if(n==numeroAdivinar){
-                    alert("Enhorabuena has adivinado el numero");
-                }else{
-                    if(n>numeroAdivinar){
-                        alert("El numero secreto es menor. Intentalo de nuevo.")
-                    }else{
-                        alert("El numero es mayor. Intentalo de nuevo.")
-                    }
-                    document.getElementById("intentos").innerHTML="<h2>"+cont+"</h2>";
-                } 
-           }
-           function Reinicia(){            
+        var numero;
+        var numeroMayor,
+        var numeroMenor;
+        var contador=0;
+
+        function inicio(){
+            numero=Math.ceil(Math.random()*100);
+            document.getElementById("numero").innerHTML="<h3>"+numero+"</h3>";
+            contador=contador+1; 
+            document.getElementById("intentos").innerHTML="<h3>"+contador+"</h3>";
+            contador=0;
+            numeroMenor=1;
+            numeroMayor=100;
+        }
+           function esMayor(){
+           numero=numeroMenor;
+           numero=(numeroMayor+numero)/2;
+           numero=math.round(numero);
             cont=0;
             document.getElementById("num").value="0";
             numeroAdivinar=Math.floor((Math.random()*100)+1);
@@ -37,11 +40,13 @@
 <body>
     <div class="centrar">
         <h1>El adivino de numeros</h1>
-        <h4>Piensa en un numeroque este entre 0 y 1000 escribelo:</h4>
-        <input type="text" id="num"/><br><br>
-        <input type="button" id="adivinar" value="Comprueba si has acertado" onclick="Adivinar()">
-        <input type="button" id="reiniciar" value="Reiniciar el juego" onclick="Reinicia()">
-        <h3>Nº intentos:</h3>
+        <h3>Piensa en un numero que este entre 0 y 1000 y yo lo adivinare...</h3>
+        <h3>¿Es el numero?:</h3>
+        <div id="numero"></div>
+        <input type="button" id="Menor" value="¡Menor!" onclick="esMenor()">
+        <input type="button" id="Acertado" value="¡Has acertado!" onclick="Adivinado()">
+        <input type="button" id="Mayor" value="¡Mayor!" onclick="esMayor()">
+        <h3>Intentos:</h3>
         <div id="intentos"></div>
     </div>
 </body>

@@ -12,26 +12,20 @@
 		if(click==1){
 			document.getElementById('jugador').innerHTML = "<h1> Le toca al jugador2</h1>";
   			document.getElementById('cambio'+id).innerHTML = "<img src='images/O.jpg' width='90px' height='90px'/>";  			
-  			opciones[id]=1;
-  			JugadorO();
+  			opciones[id]=click;
+  			Jugador(click);
   			click=2;
   		}else{
   			document.getElementById('jugador').innerHTML = "<h1> Le toca al jugador1</h1>";
   			document.getElementById('cambio'+id).innerHTML = "<img src='images/X.jpg' width='90px' height='90px'/>";  
-  			opciones[id]=2;	
-  			JugadorX();		
+  			opciones[id]=click;	
+  			Jugador(click);		
   			click=1;  			
   		}  		  		
  	} 
- 	function JugadorO(){
- 		if(((opciones[0]==1) && (opciones[1]==1) && (opciones[2]==1))|| ((opciones[3]==1) && (opciones[4]==1) && (opciones[5]==1))||((opciones[6]==1) && (opciones[7]==1) && (opciones[8]==1))||((opciones[0]==1) && (opciones[4]==1) && (opciones[8]==1))||((opciones[2]==1) && (opciones[4]==1) && (opciones[6]==1))||((opciones[0]==1) && (opciones[3]==1) && (opciones[6]==1))||((opciones[1]==1) && (opciones[4]==1) && (opciones[7]==1))||((opciones[2]==1) && (opciones[5]==1) && (opciones[8]==1))){ 	
- 			alert("Ha ganado el jugador 1");
- 			reiniciar();
- 		}
- 	}f
- 	function JugadorX(){
- 		if((opciones[0]==2) && (opciones[1]==2) && (opciones[2]==2)|| (opciones[3]==2) && (opciones[4]==2) && (opciones[5]==2)|| (opciones[6]==2) && (opciones[7]==2) && (opciones[8]==2)||(opciones[0]==2) && (opciones[4]==2) && (opciones[8]==2)||(opciones[2]==2) && (opciones[4]==2) && (opciones[6]==2)||(opciones[0]==2) && (opciones[3]==2) && (opciones[6]==2)||(opciones[1]==2) && (opciones[4]==2) && (opciones[7]==2)||(opciones[2]==2) && (opciones[5]==2) && (opciones[8]==2)){
- 			alert("Ha ganado el jugador 2");
+ 	function Jugador(click){
+ 		if(((opciones[0]==click) && (opciones[1]==click) && (opciones[2]==click))|| ((opciones[3]==click) && (opciones[4]==click) && (opciones[5]==click))||((opciones[6]==click) && (opciones[7]==click) && (opciones[8]==click))||((opciones[0]==click) && (opciones[4]==click) && (opciones[8]==click))||((opciones[2]==click) && (opciones[4]==click) && (opciones[6]==click))||((opciones[0]==click) && (opciones[3]==click) && (opciones[6]==click))||((opciones[1]==click) && (opciones[4]==click) && (opciones[7]==click))||((opciones[2]==click) && (opciones[5]==click) && (opciones[8]==click))){ 	
+ 			alert("Ha ganado el jugador "+click);
  			reiniciar();
  		}
  	}

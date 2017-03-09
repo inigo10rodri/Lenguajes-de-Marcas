@@ -1,77 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Javascript 11</title>
-	<script type="text/javascript">
-	var contador6=0;
-		function lanzar () {			
-			var numero=Math.ceil(Math.random()*6);
-			switch(numero){
-				case 1: 
-				document.getElementById("cambio").src="images/1.png";
-				break;
-				case 2: 
-				document.getElementById("cambio").src="images/2.png";
-				break;
-				case 3: 
-				document.getElementById("cambio").src="images/3.png";
-				break;
-				case 4: 
-				document.getElementById("cambio").src="images/4.png";
-				break;
-				case 5: 
-				document.getElementById("cambio").src="images/5.png";
-				break;
-				case 6: 
-				document.getElementById("cambio").src="images/6.png";
-				contador6=contador6+1;
-				document.getElementById("contador").innerHTML="<h2> El 6 ha salido: "+contador6+"</h2>";
-				break;
-			}
-		}
-		function reset(){	
-			contador6=0;			
-			document.getElementById("cambio").src="images/dado.jpg";
-			document.getElementById("contador").innerHTML="<h2>El 6 ha salido:  "+contador6+"</h2>";
-		}	
-		
-	</script>
-	<style>
-		.centrar{
-			text-align: center;			
-		}
-		 body{
-		 	background-image: url(images/back.jpg);}
+<html>
+    <head>
+        <title>Lanzamiento de dado</title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                text-align: center;
+                background-image: url("images/back.jpg");
+                
+            }
+            
+            table{
+                margin:auto;
+            }
+            .celda{
+                width:200px;
+                height: 200px;
+            }
+            h1{
+                color:#fe00ff;
+            }
+            
+        </style>
+        <script type="text/javascript">
+            var contador;
+            contador=1;
 
-	</style>
-</head>
-<body>
-	<div class="centrar">
-		<h1>El Juego del Dado</h1>
-		<table>
-          <thead>
-            <tr>
-              <td colspan="4"><img src="00.jpg" width="500" height="300" id="principal" onclick="changeImg()"></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><img src="1.png" width="125" height="100" onclick="changeImg('00')"  ></td>
-              <td><img src="1.png" width="125" height="100" onclick="changeImg('01')"></td>
-            </tr>
+            function lanzar(){
 
+                var numero=Math.ceil(Math.random()*6);  
+
+                switch (contador){
+                    case 1:
+                        document.getElementById("00").innerHTML = '<img src="images/'+numero+'.png" width=200 height=200 />';                        
+                        break;
+
+                    case 2:
+                        document.getElementById("01").innerHTML = '<img src="images/'+numero+'.png" width=200 height=200 />';
+                        break;
+
+                    case 3:
+                        document.getElementById("10").innerHTML = '<img src="images/'+numero+'.png" width=200 height=200 />'; 
+                        break;
+
+                    case 4:
+                        document.getElementById("11").innerHTML = '<img src="images/'+numero+'.png" width=200 height=200 />';
+                        break;
+
+                }               
+
+                contador = contador+1;    
+
+            }
+
+            function reset(){
+                document.getElementById("00").innerHTML = "";
+                document.getElementById("01").innerHTML = "";
+                document.getElementById("10").innerHTML = "";
+                document.getElementById("11").innerHTML = "";
+                contador=1;
+
+            }
+        
+        </script>
+    </head>
+    <body>
+        <h1>El Juego del Dado</h1>
+
+        <table border="1">
             <tr>
-              <td><img src="1.png" width="125" height="100" onmouseover="changeImg('11')" ></td>
-              <td><img src="1.png" width="125" height="100" onmouseover="changeImg('12')" ></td>
+                <td id="00" class="celda"></td>
+                <td id="01" class="celda"></td>
             </tr>
-          </tbody>
-        </table>
-		<input type="button" value="Lanza el dado" onclick="lanzar()">
-		<br/>
-		<input type="button" value="Reset" onclick="reset()"> <br/>
-		<h2>Has tirado:</h2> 
-		<div id="contador"></div>
-	</div>
-</body>
+            <tr>
+                <td id="10" class="celda"></td>
+                <td id="11" class="celda"></td>
+            </tr>
+        </table>        
+
+        <br/><br/><br/>
+        <input type="button" value="Lanza el dado" onclick="lanzar()"/>
+        <br/><br/>
+        <input type="button" value="Reset" onclick="reset()"/>
+
+
+
+    </body>
 </html>
