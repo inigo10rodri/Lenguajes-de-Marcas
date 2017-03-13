@@ -24,19 +24,18 @@
          
         function iniciar(){
              numero=Math.ceil(Math.random()*100);
-             document.getElementById("respuesta").innerHTML ="<h1>"+numero+"</h1>";
+             document.getElementById("respuesta").innerHTML ="<h1>"+numero+"</h1>"; 
              cont++; 
              document.getElementById("intentos").innerHTML ="<h3>"+cont+"<h3>";
              cont=0;
              numMenor=1;  
-             numMayor=100;
-            
-             }
+             numMayor=100;            
+        }
          
            function esMayor(){ 
                numMenor=numero;
                numero=(numMayor+numero)/2;
-               numero=Math.round(numero);              
+               numero=math.round(numero);              
                document.getElementById("respuesta").innerHTML ="<h1>"+numero+"</h1>";
                cont++; 
                document.getElementById("intentos").innerHTML ="<h3>"+cont+"<h3>";
@@ -51,7 +50,7 @@
             function esMenor(){
                numMayor=numero;                
                numero=(numero+numMenor)/2;
-               numero=Math.round(numero);            
+               numero=math.round(numero);            
                document.getElementById("respuesta").innerHTML ="<h1>"+numero+"</h1>";
                cont++; 
                document.getElementById("intentos").innerHTML ="<h3>"+cont+"<h3>";

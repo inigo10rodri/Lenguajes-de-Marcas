@@ -6,30 +6,48 @@
 
     <script type="text/javascript">
         var numero;
-        var numeroMayor,
+        var numeroMayor;
         var numeroMenor;
         var contador=0;
+        var numeroPensado;
 
         function inicio(){
             numero=Math.ceil(Math.random()*100);
             document.getElementById("numero").innerHTML="<h3>"+numero+"</h3>";
-            contador=contador+1; 
+            contador++; 
             document.getElementById("intentos").innerHTML="<h3>"+contador+"</h3>";
-            contador=0;
             numeroMenor=1;
             numeroMayor=100;
         }
-           function esMayor(){
-           numero=numeroMenor;
+        function esMayor(){
+           numeroMenor=numero;
            numero=(numeroMayor+numero)/2;
-           numero=math.round(numero);
-            cont=0;
-            document.getElementById("num").value="0";
-            numeroAdivinar=Math.floor((Math.random()*100)+1);
-            document.getElementById("intentos").innerHTML="<h2>"+cont+"</h2>";
-           }
-            var numeroAdivinar=Math.floor((Math.random()*100)+1);
-            var cont=0; 
+           numero=Math.round(numero);
+           document.getElementById("numero").innerHTML ="<h1>"+numero+"</h1>";
+            contador++;
+           document.getElementById("intentos").innerHTML="<h3>"+contador+"</h3>";
+                if(numero==numeroPensado){
+                    alert("Has adivinado el numero!");
+                }
+        }
+        function esMenor(){
+            contador++;
+            numeroMayor=numero;
+            numero=(numeroMenor+numero)/2;
+            numero=Math.round(numero);
+            document.getElementById("numero").innerHTML ="<h1>"+numero+"</h1>";            
+            document.getElementById("intentos").innerHTML="<h3>"+contador+"</h3>";
+                if(numero==numeroPensado){
+                    alert("Has adivinado el numero!");
+                }
+        }
+        function Adivinado(){
+            alert("Has adivinado el numero!");
+            reiniciar();
+        }
+        function reiniciar(){
+            location.reload();
+        }
     </script>
     <style>
         .centrar{
@@ -45,7 +63,8 @@
         <div id="numero"></div>
         <input type="button" id="Menor" value="¡Menor!" onclick="esMenor()">
         <input type="button" id="Acertado" value="¡Has acertado!" onclick="Adivinado()">
-        <input type="button" id="Mayor" value="¡Mayor!" onclick="esMayor()">
+        <input type="button" id="Mayor" value="¡Mayor!" onclick="esMayor()"><br/><br/>
+        <input type="button" id="iniciar" value="Iniciar Juego" onclick="inicio()">
         <h3>Intentos:</h3>
         <div id="intentos"></div>
     </div>
