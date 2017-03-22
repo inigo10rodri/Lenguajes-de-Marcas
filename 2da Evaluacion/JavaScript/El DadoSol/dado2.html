@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lanzamiento de dado</title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                text-align: center;
+                background-image: url("images/back.jpg");
+                
+            }
+            
+            table{
+                margin:auto;
+            }
+            .celda{
+                width:200px;
+                height: 200px;
+            }
+            h1{
+                color:#fe00ff;
+            }
+            
+        </style>
+        <script type="text/javascript">
+            var contador;
+            contador=1;
+
+            function lanzar(){
+
+                var numero=Math.ceil(Math.random()*6);  
+
+                switch (contador){
+                    case 1:{
+                        switch (numero) {
+                            case 1:
+                                document.getElementById("00").innerHTML = '<img src="images/1.png" width=200 height=200 />';
+                                break;
+                            case 2:
+                                document.getElementById("00").innerHTML = '<img src="images/2.png" width=200 height=200 />';
+                                break;
+                            case 3:
+                                document.getElementById("00").innerHTML = '<img src="images/3.png" width=200 height=200 />';
+                                break;
+                            case 4:
+                                document.getElementById("00").innerHTML = '<img src="images/4.png" width=200 height=200 />';
+                                 break;
+                            case 5:
+                                document.getElementById("00").innerHTML = '<img src="images/5.png" width=200 height=200 />';
+                                break;  
+                            case 6:
+                                document.getElementById("00").innerHTML = '<img src="images/6.png" width=200 height=200 />';
+                                break;               
+                        }
+                        break;
+
+                        /* En vez de utilizar el switch(numero)
+                        document.getElementById("00").innerHTML = '<img src="images/'+numero+'.png" width=200 height=200 />';
+                        */
+                    }
+                    case 2:{
+                        switch (numero) {
+                            case 1:
+                                document.getElementById("01").innerHTML = '<img src="images/1.png" width=200 height=200 />';
+                                break;
+                            case 2:
+                                document.getElementById("01").innerHTML = '<img src="images/2.png" width=200 height=200 />';
+                                break;
+                            case 3:
+                                document.getElementById("01").innerHTML = '<img src="images/3.png" width=200 height=200 />';
+                                break;
+                            case 4:
+                                document.getElementById("01").innerHTML = '<img src="images/4.png" width=200 height=200 />';
+                                 break;
+                            case 5:
+                                document.getElementById("01").innerHTML = '<img src="images/5.png" width=200 height=200 />';
+                                break;  
+                            case 6:
+                                document.getElementById("01").innerHTML = '<img src="images/6.png" width=200 height=200 />';
+                                break;               
+                        }
+                        break;
+
+                        /* En vez de utilizar el switch(numero)
+                        document.getElementById("01").innerHTML = '<img src="images/'+numero+'.png" width=200 height=200 />';
+                        */
+                    }
+                    case 3:{
+                        switch (numero) {
+                            case 1:
+                                document.getElementById("10").innerHTML = '<img src="images/1.png" width=200 height=200 />';
+                                break;
+                            case 2:
+                                document.getElementById("10").innerHTML = '<img src="images/2.png" width=200 height=200 />';
+                                break;
+                            case 3:
+                                document.getElementById("10").innerHTML = '<img src="images/3.png" width=200 height=200 />';
+                                break;
+                            case 4:
+                                document.getElementById("10").innerHTML = '<img src="images/4.png" width=200 height=200 />';
+                                 break;
+                            case 5:
+                                document.getElementById("10").innerHTML = '<img src="images/5.png" width=200 height=200 />';
+                                break;  
+                            case 6:
+                                document.getElementById("10").innerHTML = '<img src="images/6.png" width=200 height=200 />';
+                                break;               
+                        }
+                        break;
+
+                        /* En vez de utilizar el switch(numero)
+                        document.getElementById("10").innerHTML = '<img src="images/'+numero+'.png" width=200 height=200 />';
+                        */
+                    }
+                    case 4:{
+                        switch (numero) {
+                            case 1:
+                                document.getElementById("11").innerHTML = '<img src="images/1.png" width=200 height=200 />';
+                                break;
+                            case 2:
+                                document.getElementById("11").innerHTML = '<img src="images/2.png" width=200 height=200 />';
+                                break;
+                            case 3:
+                                document.getElementById("11").innerHTML = '<img src="images/3.png" width=200 height=200 />';
+                                break;
+                            case 4:
+                                document.getElementById("11").innerHTML = '<img src="images/4.png" width=200 height=200 />';
+                                 break;
+                            case 5:
+                                document.getElementById("11").innerHTML = '<img src="images/5.png" width=200 height=200 />';
+                                break;  
+                            case 6:
+                                document.getElementById("11").innerHTML = '<img src="images/6.png" width=200 height=200 />';
+                                break;               
+                        }
+                        break;
+
+                        /* En vez de utilizar el switch(numero)
+                        document.getElementById("11").innerHTML = '<img src="images/'+numero+'.png" width=200 height=200 />';
+                        */
+                    } 
+
+                }               
+                contador = contador+1;    
+            }
+
+            function reset(){
+                document.getElementById("00").innerHTML = "";
+                document.getElementById("01").innerHTML = "";
+                document.getElementById("10").innerHTML = "";
+                document.getElementById("11").innerHTML = "";
+                contador=1;
+
+            }
+        
+        </script>
+    </head>
+    <body>
+        <h1>El Juego del Dado</h1>
+
+        <table border="1">
+            <tr>
+                <td id="00" class="celda"></td>
+                <td id="01" class="celda"></td>
+            </tr>
+            <tr>
+                <td id="10" class="celda"></td>
+                <td id="11" class="celda"></td>
+            </tr>
+        </table>        
+
+        <br/><br/><br/>
+        <input type="button" value="Lanza el dado" onclick="lanzar()"/>
+        <br/><br/>
+        <input type="button" value="Reset" onclick="reset()"/>
+
+
+
+    </body>
+</html>

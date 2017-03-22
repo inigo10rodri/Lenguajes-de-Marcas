@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Titulo</title>
+		<script type="text/javascript"> 
+			
+			var meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+			var dias_meses = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+			var dia, mes, año;
+
+			dia = prompt("Introduce el número del día (1-31):", "");
+			mes = prompt("Introduce el número del mes (1-12):", "");
+			año = prompt("Introduce el número del año (1900-2099):", "");
+
+			if ( ((isNaN(mes) == true) || (mes < 1) || (mes > 12)) || ((isNaN(dia) == true) || (dia < 1) || (dia > 31)) || ((isNaN(año) == true) || (año < 1900) || (año > 2099)) ){
+				alert("No ha introcucido números válidos de día, mes y/o año.");
+			}
+			else {
+				if ( dias_meses[mes - 1] < mes ) {
+					document.write("El mes de " + meses[mes - 1] + " no tiene " + dia + " días.")
+				}
+				else {
+					dia = parseInt(dia);
+					mes = parseInt(mes);
+					año = parseInt(año);	
+
+					document.write("El día introducido es: " + dia + " de " + meses[mes-1] + " de " + año);
+				}
+			}
+		</script> 
+	</head>
+	<body>
+
+	</body>
+</html>

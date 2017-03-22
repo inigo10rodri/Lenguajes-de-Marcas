@@ -1,0 +1,42 @@
+<!--Haz un programa que dado el nombre del día de la semana muestra el número.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+		var nomSemana;
+		var numSemana;
+		nomSemana=prompt("Introduce el nombre del dia de la semana: ")
+		switch(nomSemana.toLowerCase()){
+			case "lunes":
+				numSemana="1";
+				break;
+			case "martes":
+				numSemana="2";
+				break;
+			case "miercoles":
+				numSemana="3";
+				break;
+			case "jueves":
+				numSemana="4";
+				break;
+			case "viernes":
+				numSemana="5";
+				break;
+			case "sabado":
+				numSemana="6";
+				break;
+			case "domingo":
+				numSemana="7";
+				break;
+			default:
+				numSemana="Este dia no existe(Introduce un dia entre 1 y 7)";	
+		}
+		document.write("El "+nomSemana+" es el dia numero "+numSemana+" de la semana.");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

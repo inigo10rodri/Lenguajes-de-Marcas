@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 8</title>
+	<script type="text/javascript">
+		function vertabla2por2(){
+			document.write("<table border='1'>");
+			document.write("<tr>");
+			document.write("<td>A</td>");
+			document.write("<td>A</td>");
+			document.write("</tr>");
+			document.write("<tr>");
+			document.write("<td>A</td>");
+			document.write("<td>A</td>");
+			document.write("</tr>");
+			document.write("</table>");
+		}
+		function saluda(){
+			alert("Hola mundo");
+		}
+		function vertabla3por3(){
+			document.write("<table border='1'>");
+			document.write("<tr>");
+			document.write("<td>A</td>");
+			document.write("<td>A</td>");
+			document.write("<td>A</td>");
+			document.write("</tr>");
+			document.write("<tr>");
+			document.write("<td>A</td>");
+			document.write("<td>A</td>");
+			document.write("<td>A</td>");
+			document.write("</tr>");
+			document.write("<tr>");
+			document.write("<td>A</td>");
+			document.write("<td>A</td>");
+			document.write("<td>A</td>");
+			document.write("</tr>");
+			document.write("</table>");
+		}
+		
+	</script>	
+	
+</head>
+<body>
+	<h1>¿Que quieres que muestre la pagina?</h1>
+	<input type="button" value="Una tabla de 2 filas * 2 columnas" onclick="vertabla2por2()">
+	<input type="button" value="Un mensaje de saludo" onclick="saluda()">
+	<input type="button" value="Una tabla de 3 filas * 3 columnas" onclick="vertabla3por3()">
+	<div id="mensaje"></div>
+</body>
+</html>

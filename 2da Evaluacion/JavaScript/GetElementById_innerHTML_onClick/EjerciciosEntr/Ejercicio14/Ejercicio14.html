@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript 9</title>
+	<script type="text/javascript">
+			function tabla(){
+		 	var numfil,numcol;
+               numfil=parseInt(document.getElementById("num2").value);
+               numcol=parseInt(document.getElementById("num1").value);
+              cadena="";
+              cadena=cadena + "<table border='1'>";
+	             for(var i=0;i<numfil;i++) {
+	             	cadena=cadena + "<tr>";
+	            	for(var j=0;j<numcol;j++){          	
+	            		cadena=cadena + "<td><img src='"+i+j+".jpg' width=300 height=200/></td>";
+	            	}
+	            	cadena=cadena +"</tr>";
+	             }
+
+      		  cadena=cadena +"</table>";
+      		  document.write(cadena);
+      		}
+	</script>
+	<style>
+		.centrar{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="centrar">
+		<h1>Galeria dinamica de fotos</h1>
+		<label>X(columnas):</label><input type="text" id="num1"/><br><br>
+		<label>Y(filas):</label><input type="text" id="num2" /><br/><br/>
+		<input type="button" id="tabla" value="Crear la galeria" onclick="tabla()">
+	</div>
+</body>
+</html>

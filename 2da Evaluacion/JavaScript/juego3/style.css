@@ -1,0 +1,29 @@
+{
+    height:50px;
+    width: 50px;
+    border: solid 3px blue;
+}
+#colorelegido1
+{
+    background-color: black;
+}
+#colorelegido2
+{
+    background-color: red;
+}
+td
+{
+    width: 50px;
+    height: 50px;
+    border: solid black 3px;
+}
+table
+{
+    border: solid pink 5px;
+}
+div#contenedorTabla
+{
+    position: absolute;
+    top: 0%;
+    left: 35%;
+}

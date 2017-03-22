@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript 3</title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+            function ver(numero){
+                 document.getElementById("num1").value=numero;
+                 document.getElementById("num2").value=numero;
+            }
+            
+            function suma(){
+                var a=parseInt(document.getElementById("num1").value);
+                var b=parseInt(document.getElementById("num2").value);
+                document.getElementById("result").value=a+b;
+            }
+            function resta(){
+                var a=parseInt(document.getElementById("num1").value);
+                var b=parseInt(document.getElementById("num2").value);
+                document.getElementById("result").value=a-b;
+            }
+            function multipicar(){
+                var a=parseInt(document.getElementById("num1").value);
+                var b=parseInt(document.getElementById("num2").value);
+                document.getElementById("result").value=a*b;
+            }
+            function dividir(){
+                var a=parseInt(document.getElementById("num1").value);
+                var b=parseInt(document.getElementById("num2").value);
+                document.getElementById("result").value=a/b;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table border=1>
+            <tr>
+                <td>Numero 1</td>
+                <td>Numero 2</td>
+                <td>Resultado</td>
+            </tr>
+             <tr>
+                <td><input type="text" id="num1"/></td>
+                <td><input type="text" id="num2"/></td>
+                <td><input type="text" id="result"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="mas" value="+" onclick="suma()"/>
+                    <input type="button" id="menos" value="-" onclick="resta()"/>
+                    <input type="button" id="por" value="*" onclick="multipicar()"/>
+                    <input type="button" id="entre" value="/" onclick="dividir()"/>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

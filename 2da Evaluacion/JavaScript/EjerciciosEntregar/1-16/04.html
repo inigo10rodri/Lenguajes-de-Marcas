@@ -1,0 +1,46 @@
+<!--Haz un programa que pida introducir por teclado las notas de 5 alumnos y a
+continuación devuelva cuántos alumnos han aprobado y cuántos han suspendido. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+    var nota1;
+    var nota2;
+    var nota3;
+    var nota4;
+    var nota5;
+    var contSuspendidos=0;
+    var contAprobados=0;
+
+    nota1 = prompt("Introduce una nota: ");
+    nota2 = prompt("Introduce una nota: ");
+    nota3 = prompt("Introduce una nota: ");
+    nota4 = prompt("Introduce una nota: ");
+    nota5 = prompt("Introduce una nota: ");
+
+    if(nota1  < 5){contSuspendidos+=1;}
+    else{contAprobados+=1;}
+    if(nota2  < 5){contSuspendidos+=1;}
+    else{contAprobados+=1;}
+    if(nota3  < 5){contSuspendidos+=1;}
+    else{contAprobados+=1;}
+    if(nota4  < 5){contSuspendidos+=1;}
+    else{contAprobados+=1;}
+    if(nota5  < 5){contSuspendidos+=1;}
+    else{contAprobados+=1;}
+
+    document.write("Suspendidos> "+contSuspendidos);
+    document.write("\nAprobados> "+contAprobados);
+
+
+
+    </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>

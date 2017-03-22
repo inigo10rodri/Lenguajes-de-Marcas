@@ -1,0 +1,41 @@
+<!-- Haz un programa que pida la altura y el peso de una persona y devuelva si tiene
+sobrepeso o no. Utiliza una función que dado el peso y la altura devuelva un
+booleano (trae o false) para indicar si la persona tiene sobrepeso o no. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+       function IMC(peso,altura){
+           var iMC="";
+           var peso;
+           var altura;
+           
+           iMC=parseFloat(iMC);
+           iMC=parseFloat(peso)/(parseFloat(altura)*parseFloat(altura));
+                if (iMC < 18){
+                    return document.write("Por debajo del peso normal.");    
+                }else if(iMC >= 18 && iMC <= 24.9){
+                    return document.write("Normal."); 
+                }else if(iMC >24.9 && iMC <= 26.9){
+                    return document.write("Sobrepeso."); 
+                }else if(iMC >26.9 && iMC <= 29.9){
+                    return document.write("Obesidad grado I."); 
+                }else if(iMC >29.9 && iMC <= 39.9){
+                    return document.write("Obesidad grado II");                 
+                }
+           return document.write(iMC);
+       }     
+        var  mides=parseFloat(mides);
+        var pesas=parseFloat(pesas);
+        mides=prompt("Introduce la altura en metros:", "");   
+        pesas=prompt("Introduce el peso en kg:","");            
+       IMC(pesas,mides);
+    </script>
+    
+</head>
+<body>
+
+</body>
+</html>

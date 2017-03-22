@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript 11</title>
+	<script type="text/javascript">
+		function tabla2por2(){
+			document.write("<table border='1'>");
+			document.write("<tr>");
+			document.write("<td><img src='00.jpg' width=300 height=200/></td>");
+			document.write("<td><img src='00.jpg' width=300 height=200/></td>");
+			document.write("</tr>");
+			document.write("<tr>");
+			document.write("<td><img src='00.jpg' width=300 height=200/></td>");
+			document.write("<td><img src='00.jpg' width=300 height=200/></td>");
+			document.write("</tr>");
+			document.write("</table>");
+		}
+		function tabla3por3(){
+			document.write("<table border='1'>");
+			document.write("<tr>");
+			document.write("<td><img src='00.jpg' width=300 height=200/></td>");
+			document.write("<td><img src='00.jpg'width=300 height=200></td>");
+			document.write("<td><img src='00.jpg'width=300 height=200></td>");
+			document.write("</tr>");
+			document.write("<tr>");
+			document.write("<td><img src='00.jpg'width=300 height=200></td>");
+			document.write("<td><img src='00.jpg'width=300 height=200'></td>");
+			document.write("<td><img src='00.jpg'width=300 height=200></td>");
+			document.write("</tr>");
+			document.write("<tr>");
+			document.write("<td><img src='00.jpg'width=300 height=200></td>");
+			document.write("<td><img src='00.jpg'width=300 height=200></td>");
+			document.write("<td><img src='00.jpg'width=300 height=200></td>");
+			document.write("</tr>");
+			document.write("</table>");
+		}  		
+	</script>
+	<style>
+		.centrar{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="centrar">
+	<h1>Galería de fotos</h1>
+	<input type="button" value="2 filas*2 columnas" onclick="tabla2por2()">
+	<input type="button" value="3 filas*3 columnas" onclick="tabla3por3()">
+	</div>
+</body>
+</html>

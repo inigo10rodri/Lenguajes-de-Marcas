@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Titulo</title>
+		<script type="text/javascript"> 
+			var nota;
+			var i, contadorNota, contadorAprob, contadorSusp;
+
+			contadorNota = 0;
+			contadorSusp = 0;
+			contadorAprob = 0;
+
+			for (i = 1; i <= 5; i++){
+				nota = prompt("Intruduce una nota:",""); 
+				if ( (isNaN(nota) == true) || ( (nota < 0) || (nota >= 10) ) ) {
+					alert("No ha introcucido una nota. Debe introducir un número entre 0 y 10");
+				}
+				else {
+					contadorNota = contadorNota + 1;
+					nota = parseInt(nota);	
+					if (nota >=5){
+						contadorAprob = contadorAprob + 1;
+					}
+					else{
+						contadorSusp = contadorSusp + 1;
+					}
+				}
+			}
+			
+		 	document.write("Ha introducido " + contadorNota + " notas: ");
+		 	document.write("<br>");
+		 	document.write(contadorSusp + " suspensos");
+		 	document.write("<br>");		
+		 	document.write(contadorAprob + " aprobados");			
+			
+		</script> 
+	</head>
+	<body>
+
+	</body>
+</html>

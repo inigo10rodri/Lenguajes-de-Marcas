@@ -1,0 +1,26 @@
+<!--Haz un programa que dado el nombre del mes muestra el número del mes.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+		var nomMes=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+		var mes;
+		mes=prompt("Introduce el nombre del mes");
+		mes = mes.toLowerCase();
+		for (var i=0;i<=11;i++){
+			if(nomMes[i]==mes){
+				document.write("El mes de "+mes+" es el numero"+(i+1));
+				break;
+			}else{
+				document.write("No ha introducido el nombre de un mes");
+				break;
+			}
+		}		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

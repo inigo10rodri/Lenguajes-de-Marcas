@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Titulo</title>
+		<script type="text/javascript"> 
+			
+			var meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+			var  mes;
+			var i;
+			var encontrado;
+
+			encontrado = false;
+			mes = prompt("Introduce el nombre de un mes:", "");
+			mes = mes.toLowerCase();
+
+			for( i=1; i<=12; i++) {
+				if (meses[i-1] == mes) {
+					document.write("El mes de " + mes + " es el mes número " + i);
+					encontrado = true;
+				}
+			}
+
+			if (encontrado == false) {
+				document.write("No ha introducido el nombre de un mes.")
+			}
+
+		</script> 
+	</head>
+	<body>
+
+	</body>
+</html>
