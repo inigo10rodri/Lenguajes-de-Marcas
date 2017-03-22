@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>show,hide,toggle</title>
+	<style>
+		.centrar{
+			text-align: center;
+		}
+	</style>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#mostrar").click(
+				function(){
+					$("#imagen").show(2000);
+				}
+			);
+			$("#ocultar").click(
+				function(){
+					$("#imagen").hide(2000);
+				}
+			);
+			$("#mostrarocultar").click(
+				function(){
+					$("#imagen").toggle(2000);
+				}
+			);
+		});
+	</script>
+</head>
+<body>
+	<div class="centrar">
+		<input type="button" value="Mostrar" id="mostrar"><br><br>
+		<input type="button" value="Ocultar" id="ocultar"><br><br>
+		<input type="button" value="Mostrar/Ocultar" id="mostrarocultar"><br><br>
+		<img src="imagen.jpg" id="imagen">
+	</div>
+</body>
+</html>

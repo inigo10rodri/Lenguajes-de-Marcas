@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo 1</title>
+        <meta charset="utf-8"/>
+        <style>
+            p{
+              width:250px;   
+            }
+        </style>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready( 
+                function(){
+                    $("p").click(
+                          
+                        function(){
+                            $(this).hide();
+                            
+                        }
+                    
+                    );
+
+                    $("p").mouseover(
+                          
+                        function(){
+                            $(this).css('color','red');                           
+                        }                   
+                    );
+                }              
+            );
+            
+            
+        </script>
+    </head>
+    <body>
+        <p>Esto es una prueba1</p>
+        <p>Esto es una prueba2</p>
+        <p>Esto es una prueba3</p>
+        <p>Esto es una prueba4</p>
+        <p>Esto es una prueba5</p>
+        <p>Esto es una prueba6</p>
+    </body>
+</html>

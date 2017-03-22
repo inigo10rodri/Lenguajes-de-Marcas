@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FadeIn,Out,Toggle</title>
+	<style>
+            .centrar{
+            	text-align: center;
+            }
+        </style>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#mostrar").click(
+				function(){
+					$("#imagen").fadeIn(2000);
+				}
+			);
+			$("#ocultar").click(
+				function(){
+					$("#imagen").fadeOut(2000);
+				}
+			);
+			$("#mostrarocultar").click(
+				function(){
+					$("#imagen").fadeToggle(2000);
+				}
+			);
+		});
+	</script>
+</head>
+<body>
+	<div class="centrar">
+		<input type="button" value="Mostrar con efecto fadeIn" id="mostrar"><br><br>
+		<input type="button" value="Ocultar con efecto fadeOut" id="ocultar"><br><br>
+		<input type="button" value="Mostrar/Ocultar con fadeToggle" id="mostrarocultar"><br><br>
+		<img src="imagen.jpg" id="imagen">
+	</div>
+</body>
+</html>

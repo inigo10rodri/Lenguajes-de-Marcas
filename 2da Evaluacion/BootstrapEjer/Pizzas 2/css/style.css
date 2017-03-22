@@ -1,0 +1,25 @@
+
+.header {
+    font-style: bold;
+    font-size: 25px;
+    text-align: center;
+    background-color: grey;
+}
+.footer{
+  text-align: center;
+  background-color: grey;
+}
+p{
+  text-align: center;
+}
+h5 {
+text-align: center;
+color:red;
+}
+.precio{
+  text-align: center;
+  color:blue;
+}
+.detalles{
+  height: 150px;
+}

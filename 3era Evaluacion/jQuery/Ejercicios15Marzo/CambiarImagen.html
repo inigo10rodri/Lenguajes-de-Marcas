@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio1</title>
+        <meta charset="utf-8"/>
+        <style>
+            p{
+              width:250px;   
+            }
+        </style>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+        var cambio=0;
+            $(document).ready(function(){
+                    //Cambiar imagen
+                    $("#imagen").click(function(){
+                        if(cambio==0){                        
+                         $("#imagen").attr("src","imagen2.jpg");
+                            cambio=1;
+                        }else{
+                            $("#imagen").attr("src","imagen.jpg");
+                            cambio=0;
+                        }
+                    }
+                );
+            }
+        );           
+
+            
+            
+        </script>
+    </head>
+    <body>
+        <img src="imagen.jpg" id="imagen">
+    </body>
+</html>

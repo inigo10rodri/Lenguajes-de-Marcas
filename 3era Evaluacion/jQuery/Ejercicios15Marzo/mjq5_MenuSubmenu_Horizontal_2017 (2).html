@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery ejemplos</title>
+        <meta charset="utf-8"/>
+        <style>
+            *{
+                margin:0px;
+                padding: 0px;
+            }
+            ol{
+             	display:none; 
+              	width: 200px;
+            }
+            
+            li{
+             	background-color: #cccccc;
+             	border: 1px solid black;
+                list-style: none;
+                width: 200px;
+            }
+            ul{
+                width: 200px; 
+            }
+           #linea1, #linea2, #linea3 {
+            	background-color: grey; 
+            	
+           }
+           
+                
+           }
+           #menu {
+                width: 1000px;
+                margin-left: 80px;
+                margin-top: 40px;
+           }
+
+
+    	   #categoria1, #categoria2, #categoria3 {
+        	   float: left;
+        	   
+    	   }
+    	 
+           
+        </style>
+        <script src="./lib/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript">
+           $(document).ready(
+               function(){
+                 $('#linea1').click(
+                        function(){
+                            $('#sub1').fadeToggle(1000);
+                 });
+                    
+                 $('#linea2').click(
+                        function(){
+                            $('#sub2').fadeToggle(1000);
+                 });
+                    
+                 $('#linea3').click(
+                        function(){
+                            $('#sub3').fadeToggle(1000);
+                 }); 
+
+
+
+                 $('#sub1').click(
+                        function(){
+                            $('#sub1').fadeOut(1000);
+                 });
+                    
+                 $('#sub2').click(
+                        function(){
+                            $('#sub2').fadeToggle(1000);
+                 });
+                    
+                 $('#sub3').click(
+                        function(){
+                            $('#sub3').fadeToggle(1000);
+                 });   
+
+
+               }
+           );
+        </script>
+    </head>
+    <body>
+       
+        <h2>jQuery , fadeIn/Out/Toggle</h2>
+        <div id="menu">
+        <ul id="categoria1">
+            
+                <li id="linea1">Panel 1</li>
+                <ol id="sub1">
+                    <li>Panel 1.1</li>
+                    <li>Panel 1.2</li>
+                    <li>Panel 1.3</li>
+                </ol>
+        </ul>
+        <ul id="categoria2">       
+                <li id="linea2">Panel 2</li>
+                <ol id="sub2">
+                    <li>Panel 2.1</li>
+                    <li>Panel 2.2</li>
+                    <li>Panel 2.3</li>
+                </ol>
+        </ul>
+        <ul id="categoria3">                
+                <li id="linea3">Panel 3</li>
+                <ol id="sub3">
+                    <li>Panel 3.1</li>
+                    <li>Panel 3.2</li>
+                    <li>Panel 3.3</li>
+                </ol>
+            
+        </ul>
+       </div>
+    </body>
+</html>

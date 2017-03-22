@@ -1,0 +1,74 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#contenedor {
+	background-color: #3A7B69;
+	width: 1000px;
+	margin: 0px auto;
+}
+header {
+	background-color: #3A7B69;
+	width: 1000px;
+	height: 80px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 20px;
+}
+section {
+	width: 500px;	
+	float: left;
+	background-color: #FFFFFF;
+	padding-left: 20px;
+}
+nav {
+	float: left;
+	width: 160px;
+	height: 450px;	
+	background-color: #E2DEDE;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+nav ul li{
+	margin: 5px;
+	padding: 10px;
+	font-size: 18px;
+}
+nav ul li a{
+	padding:10px;
+}
+aside{
+	float: right;
+	width: 300px;
+	background-color: #E2DEDE;
+	height: 450px;
+
+}
+footer{
+	float: left;
+	background-color: #3A7B69;
+	width: 1000px;
+	height: 30px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 10px;
+}
+.foto{
+	width: 130px;
+	height: 130px;
+	margin: 10px;
+	background-size: 130px 130px;
+}
+#foto1{
+	background-image: url("../images/londres.jpg");
+}
+#foto2{
+	background-image: url("../images/paris.jpg");
+}
+#foto3{
+	background-image: url("../images/tokyo.jpg");
+}
+

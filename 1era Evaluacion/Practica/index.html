@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   <head>
+
+        <meta charset=utf-8>
+        <title></title>
+        <link rel="stylesheet" href="css/style.css"/>
+   </head>
+<body>
+<div id="contenedor">
+	<header>
+		<div id="logo"></div>
+		<h1>BASKETNEWS</h1>
+		<div id="formulario">
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Entrar</legend>						
+						<label>Usuario:</label>
+						<input type="text" name="nombreusu" placeholder="Introduzca un usuario"/>
+						<br/>
+						<label>Contraseña:</label>					
+						<input type="password" name="clave" placeholder="Introduzca su contraseña"/>
+						<br/>
+						<input type="submit" name="enviar" value="Aceptar"/>
+				</fieldset>
+			</form>
+		</div>
+	</header>
+	<div id="todo">
+	<aside id="izquierda">	
+		<nav id="menú">
+		<h1>Menú</h1>
+			<ul>
+				<a href="#"><li>Últimas Noticias</li></a>
+				<a href="Partidos.html"><li>Próximos partidos</li></a>
+				<a href="Video.html"><li>Galería de vídeo</li></a>
+				<a href="Audio.html"><li>Galería de audio</li></a>
+				<a href="Fotos.html"><li>Fotos de partidos</li></a>
+				<a href="Entradas.html"><li>Comprar Entradas</li></a>
+			</ul>
+		</nav>
+		<nav id="suscribirse">
+			<h1> Suscribase a nuestro boletín</h1>
+			<form method="post" action="#">
+				<label>Introduzca su correo:</label><br/>
+				<input type="email" name="email" placeholder="xxxxx@yyyyy.zzz"/><br/>
+				<input type="submit" name="boletin" value="Aceptar"/><br/>
+			</form>
+		</nav>
+		<nav id="jugadores">
+			<h1>Jugadores destacados</h1>
+			<form method="post" action="#">
+				<input  list="Nombres artistas" id="destacados" placeholder="Selecciona un artista">
+				<datalist id="Nombres artistas">
+					<option value="Stephen Curry"></option>
+					<option value="Kevin Durant"></option>
+					<option value="Pau Gasol"></option>
+					<option value="Kristaps Porzingis"></option>
+					<option value="Lebron James"></option>
+					<option value="Derrick Rose"></option>
+				</datalist>
+			</form>
+		</nav>
+	</aside>
+	<section id="centro">
+	<div id="central"> 
+	<h1>Últimas Noticias</h1>
+	<h3>El Barcelona olvida el Clásico con una paliza al Estudiantes </h3>
+		<p>Movistar Estudiantes pagó los platos rotos de la humillante <b>derrota del FC Barcelona del viernes ante el Real Madrid (63-102)</b> y cayó en el Palau por 92-80 y lo que parecía iba a ser un severo correctivo para los hombres de Salva Maldonado acabó con un discreto resultado para los azulgrana.</p>
+
+		<p> El cambio de 'chip' de los azulgrana de la Euroliga a la liga Endesa es total en cuanto a mentalidad, pero la diferencia esta en los rivales que tiene delante y por eso no es extraño que en estos momentos el equipo de Bartzokas sea el líder provisional de la liga con siete victorias y una sola derrota.</p>
+	<h3>El Baskonia reacciona a tiempo ante un buen Zaragoza</h3>
+		<p><b>El Baskonia reaccionó a tiempo y superó al Tecnyconta Zaragoza en la prórroga, 101-92,</b> en un gran tiempo extra en el que endosó un parcial de 14-5 para llevarse el encuentro.</p>
+
+		<p> El conjunto aragonés estuvo muy cerca de conseguir su primera victoria de la historia en el Buesa Arena, pero el equipo vitoriano consiguió rehacerse con cuatro jugadores por encima de los 10 puntos.</p>
+	<h3>La mayor paliza de la historia </h3>
+		<p><b>La mayor victoria del Madrid en territorio comanche en toda la historia del Clásico: +39 (63-102).</b> La mayor de siempre, decimos. Por encima del +23 de febrero de 1968 (67-90) con don Pedro Ferrándiz en el banco. Otra muesca en el revólver de Pablo Laso y sus chicos, otra línea rotulada con letras de oro en el libro de los récords. </p>
+		<p><b>El Madrid aisló de salida a Rice y desarmó por completo a un Barça que perdió los papeles… y los balones</b> (cinco cuando aún posaba para la foto en los tacos de salida, 17 al final). </p>
+	</div>
+	</section>
+	<aside id="derecha">
+		<nav id="partidos">
+		<h1>Próximos partidos</h1>
+			<ul>
+				<li>Warriors-Heat 16 de Nov.</li>
+				<li>Grizzlies-Bucks 3 de Dic.</li>
+				<li>OKC-Wizards 25 de Enero</li>
+				<li>Cavs-Nets 6 de Feb.</li>
+				<li>Knicks-Kings 21 de Abril</li>
+				<li>Bulls-Spurs 10 de Mayo</li>
+				<li>Lakers-Celtics 29 de Agosto</li>
+			</ul>
+		</nav>
+		<nav id="jugadorSemana">
+			<h1>Jugador de la Semana</h1>
+			<div id="foto"><img src="imagenes/curry.jpg"> 
+			</div>
+			<h4>Stephen Curry</h4>
+
+		</nav>
+	</aside>
+	</div>
+		<footer>
+			Hecho por Iñigo Rodriguez ©
+		</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+
+        <meta charset=utf-8>
+        <title></title>
+        <link rel="stylesheet" href="css/style.css"/>
+   </head>
+<body>
+<div id="contenedor">
+	<header>
+		<div id="logolibro"></div>
+		<h1>Libreria Zubiri</h1>
+		<div id="logozubiri"></div>
+	</header>
+		<nav id="nav1">
+                <ul>
+                    <a href="#"><li>NOTICIAS</li></a>
+                    <a href="#"><li>RECOMENDACIONES</li></a>
+                    <a href="#"><li>SELECCION</li></a>
+                    <a href="#"><li>RESERVA</li></a>
+                    <a href="#"><li>CONTACTO</li></a>
+                </ul>
+        </nav>
+    <section id="izquierda">
+    	<div id="Reservalibros">
+    	<h1>Reserva de Libros - Selecciona ahora tu Libro</h1>
+    		<form method="post" action="#">
+    			<fieldset>
+    				<legend>Busca tu libro</legend>
+    				<label>Editorial:</label>
+    				<input id="mover1" list="nombreeditorial" placeholder="Selecciona Editorial"/><br/>
+					<datalist id="nombreeditorial">
+						<option value="Planeta"></option>
+						<option value="Grijalbo"></option>
+						<option value="Aguilar"></option>
+						<option value="Alfaguara"></option>
+						<option value="Suma"></option>
+					</datalist>
+					<label>Tipo:</label>
+    				<input id="mover2" list="tipolibro" placeholder="Selecciona tipo"/><br/>
+					<datalist id="tipolibro">
+						<option value="Infantil"></option>
+						<option value="Juvenil"></option>
+						<option value="Viajes"></option>
+						<option value="Cocina"></option>
+						<option value="Biografia"></option>
+					</datalist>
+					<label> Fecha Publicacion:</label>
+					<input type="date" value="dd/mm/aaaa"/><br/>
+					<input type="submit" name="enviar" value="Selecciona Libros"/>
+    			</fieldset>
+    		</form>
+    	</div>
+    	<div id="Fotografias">
+    	<div id="foto1">
+    		<h3>Novedades</h3>
+    		<img class="fotos" src="imagenes/libro1.jpg">
+    		<img class="fotos" src="imagenes/libro2.jpg">
+    	</div>
+    	<div id="foto2">
+    		<h3>Viajes</h3>
+    		<img class="fotos" src="imagenes/libro3.jpg">
+    		<img class="fotos" src="imagenes/libro4.jpg">
+    	</div>
+    	<div id="foto3">
+    		<h3>Biografias</h3>
+    		<img class="fotos" src="imagenes/libro5.jpg">
+    		<img class="fotos" src="imagenes/libro6.jpg">
+    		<img class="fotos" src="imagenes/libro7.jpg">
+    	</div>
+    	<a id="vermas" href="">Ver más...</a>
+    	</div>    	
+    </section>
+    <aside id="derecha">
+    	<div id="Iniciarsesion">
+    	<h1>Iniciar Sesión</h1>
+    		<form method="post" action="#">
+    				<label>Usuario:</label>
+    				<input id="mover3" type="text" name="nombredeusuario" placeholder="Introduce tu usuario"/>
+					<br/>
+					<label>Contraseña:</label>
+    				<input type="password" name="contraseña" placeholder="Introduce tu contraseña"/>
+					<br/>
+					<input id="input" type="submit" name="enviar" value="Aceptar"/>   			
+    		</form>    		
+    	</div>
+    	<div id="LibroSemana">
+    	<h1>Libro de la semana</h1>
+    	<img id="foto" src="imagenes/semana.jpg">
+    	<p>Cuando nacemos, nadie nos proporciona un manual para aprender a vivir, ni instrucciones para ser feliz. Y, sin embargo, encontrar la felicidad no es tan difícil. En realidad, existen unos secretos ...</p>    		
+    	</div>	    	
+    </aside>
+    <footer>
+    	Iñigo Rodriguez Zuloaga - ©2016
+    </footer>
+
+
+</div>
+
+</body>
+</html>

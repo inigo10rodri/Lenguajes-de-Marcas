@@ -1,0 +1,228 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: #18E866;
+}
+#contenedor{
+	background-color: #8D8B7F;
+	width: 1100px;
+	margin: 0px auto;
+	border-radius: 10px;	
+}
+#logo{
+	background: url('../imagenes/logo.jpg') no-repeat;
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-size: 100px 100px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	border-radius: 50px;
+}
+#formulario{
+	float: right;
+	width: 320px;
+	background-color: #8D8B7F;
+	margin: 10px;
+	padding: 10px;
+	color: #000;
+	border-radius: 10px;
+}
+header {
+	background-image: url("../imagenes/fondo.jpg");
+	width: 1100px;
+	height: 140px;
+	color: #4BD1EE;
+	background-size: 1000px 140px;
+	margin-top: 10px;
+}
+header h1{
+	float: left;
+	margin-left: 80px;
+	margin-top: 50px;
+	font-size: 50px;
+}
+#todo{
+	width: 100%;
+}
+#izquierda{
+	float: left;
+	width: 200px;
+	
+}
+a:hover{
+	color: black;
+	font-style: italic;
+}
+#menú{
+	width: 175px;
+	height: 175px;
+	background-color: #08F7D8;
+	margin-top: 10px;
+	margin-left: 10px;	
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	-webkit-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);	
+}
+#menú h1{
+	float: left;
+	padding-left: 10px;
+}
+#menú ul{
+	padding-left: 30px;
+	padding-top: 40px;
+}
+#suscribirse{	
+	width: 175px;
+	height: 125px;
+	background-color: #08F7D8;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	-webkit-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);	
+}
+#suscribirse h1{
+	float: left;
+	padding-left: 10px;
+}
+#suscribirse form{
+	padding-left: 10px;
+}
+#jugadores{
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 175px;
+	height: 75px;
+	background-color: #08F7D8;		
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	-webkit-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+}
+#jugadores h1{
+	padding-left: 10px;
+}
+#jugadores form{
+	padding-left: 10px;
+}
+#centro{
+	margin-left: 5px;
+	margin-top: 10px;
+	padding-left: 10px;
+	width: 650px;
+	height: 510px;
+	background-color: #08F7D8;
+	float:left;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	-webkit-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);	
+}
+#centro form{
+	margin-top: 10px;
+}
+#centro fieldset{
+	margin: 30px;
+	padding: 10px;
+	width: 400px;
+}
+.mover{
+	margin-top: 30px;
+}
+#central{
+	width: max-size;
+	margin-left: 20px;
+}
+#central h3{
+	padding-bottom: 10px;
+}
+#fotos{
+	width: 600px;
+	margin-left: 50px;
+
+}
+.foto{
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+
+}
+#derecha{
+	float: left;
+	width: 200px;
+	margin-left: 30px;
+}
+#partidos{
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+	width: 200px;
+	height: 250px;
+	background-color: #08F7D8;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	-webkit-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);	
+}
+#partidos h1{
+	padding-top: 10px;
+	padding-left: 5px;
+}
+#partidos ul{
+	padding-left: 30px;
+	padding-top: 10px;
+}
+#jugadorSemana{
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+	width: 200px;
+	height: 250px;
+	background-color: #08F7D8;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	-webkit-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 13px 15px 0px rgba(0,0,0,0.75);	
+}
+#jugadorSemana h1{
+	padding-left: 10px;
+}
+#jugadorSemana h4{
+	text-align: center;
+}
+#foto img{
+	width: 150px;
+	height: 200px;
+	padding-left: 20px;
+
+}
+footer{
+	clear: both;
+	text-align: center;
+	color: #FFF;
+}

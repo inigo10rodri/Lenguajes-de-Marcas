@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio1</title>
+        <meta charset="utf-8"/>
+        <style>
+            p{
+              width:250px;   
+            }
+        </style>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+        var cambio=0;        
+             $(document).ready( 
+                function(){
+                    $("td").click(function(){                        
+                        
+                            if(cambio==0){
+                                $(this).css("background-color","green"); 
+                                cambio=1; 
+                            }else{
+                               $(this).css("background-color","white"); 
+                                cambio=0; 
+                            }                       
+                    });
+                }
+            );              
+            
+        </script>
+    </head>
+    <body>
+        <table border="1px" >
+         <tr>
+            <td>Producto1</td>
+            <td>Producto2</td>
+            <td>Producto3</td>
+            <td>Producto4</td>
+            <td>Producto5</td>
+            <td>Producto6</td>
+            <td>Producto7</td>
+            <td>Producto8</td>
+            <td>Producto9</td>
+            <td>Producto10</td>    
+         </tr>
+        </table>
+    </body>
+</html>

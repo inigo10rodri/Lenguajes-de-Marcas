@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio1</title>
+        <meta charset="utf-8"/>
+        <style>
+            p{
+              width:250px;   
+            }
+        </style>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+             $(document).ready( 
+                function(){
+                    $("p").click(                          
+                        function(){
+                            $("#imagen").append('<img src="imagen.jpg">');                            
+                        }                    
+                    );
+                }
+            );              
+            
+        </script>
+    </head>
+    <body>
+        <p id="imagen">Haz click para que aprezca la imagen</p>
+    </body>
+</html>

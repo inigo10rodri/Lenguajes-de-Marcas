@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"ColorPick",
+		"ColorPicker",
+		"Emmet",
+		"HTML5",
+		"LiveReload",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeLinter"
+	]
+}

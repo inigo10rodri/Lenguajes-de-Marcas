@@ -1,0 +1,237 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: #94E3F7;
+}
+#contenedor {
+	background-color: #CCBEBE;
+	width: 1000px;
+	margin: 0px auto;
+	border-radius: 20px;
+	border-color: #000;
+	
+	height: 990px;
+	margin-bottom: 10px;
+	box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+#logolibro{
+	background: url('../imagenes/descarga3.png') no-repeat;
+	width: 85px;
+	height: 85px;
+	border-radius: 10px;
+	border-color: #000;
+	border-width: 2px;
+	border-style: solid;
+	float: left;
+	background-size: 85px 85px;
+	margin:20px;
+	box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+#logozubiri{
+	background: url('../imagenes/zubiri.png') no-repeat;
+	width: 75px;
+	height: 100px;
+	border-radius: 10px;
+	border-color: #000;
+	border-width: 2px;
+	border-style: solid;
+	float: right;
+	background-size: 75px 100px;
+	margin-right:50px;
+	margin-top: 20px;
+	box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+header {
+	background-image: url("../imagenes/banner biblioteca2.jpg");
+	width: 1000px;
+	height: 140px;
+	color: #1F24F6;
+	background-size: 1000px 140px;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	text-shadow: 2px 2px black;
+}
+header h1{
+	float: left;
+	margin-left:175px;
+	margin-top: 50px;
+	font-size: 60px;
+	font-family: mifuente;
+}
+@font-face{
+	font-family: mifuente;
+	src: url(../fonts/malandrino.ttf);
+}
+#nav1 {
+	width: 1000px;
+	height: 50px;	
+	background-color: #6E7C86;
+	border-style: solid;
+	border-color: #000;
+	border-width: 2px 0px 2px 0px;
+
+}
+#nav1 ul {
+	list-style-type: none;
+	padding-bottom: 3px;
+	padding-left: 30px;
+}
+#nav1 ul li{	
+	font-size: 15px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	background-color: #FFF;
+	text-align: center;
+	float: left;
+	padding: 5px 40px 5px 40px;
+	margin: 10px;
+	box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+a{
+	color: orange;
+}
+a:hover{
+	color: black;
+	font-style :italic;
+}
+#izquierda{
+	float: left;
+	width: 700px;
+}
+#Reservalibros{
+	float: left;
+	width: 650px;
+	height: 200px;
+	background-color: #FFF;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000; 
+	margin: 10px;
+	box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+#Reservalibros h1{
+	padding: 10px;
+}
+#Reservalibros fieldset{
+	margin-left: 50px;
+	margin-top: 10px;
+	padding: 10px;
+	width: 400px; 
+}
+#mover1{
+	margin-left: 60px;
+}
+#mover2{
+	margin-left: 88px;
+}
+#Fotografias{
+	margin-left: 10px;
+	margin-top:5px;
+	float: left;
+	width: 650px;
+	height: 525px;
+	background-color: #FFF;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000; 
+	box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+#Fotografias a{
+	text-decoration: none;
+}
+.fotos{
+	float: left;
+	width: 100px;
+	height: 100px;
+	border-color: blue;
+	border-width: 5px;
+	border-style: solid;
+	margin: 10px;
+}
+#foto1{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+#foto2{
+	margin-left: 20px;
+	margin-top: 140px;
+}
+#foto3{
+	margin-left: 20px;
+	margin-top: 140px;
+}
+#vermas{
+	float: left;
+	margin-left: 20px;
+	margin-right: 300px;
+	list-style-type: none;
+}
+#derecha{
+	float: right;
+	width: 300px;
+}
+#Iniciarsesion{
+	float: right;
+	width: 300px;
+	height: 150px;
+	background-color: #FFF;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	margin: 10px;
+	box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+#Iniciarsesion h1{
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+}
+#Iniciarsesion label{
+	padding-left: 10px;
+}
+#mover3{
+	margin-left: 20px;
+}
+#input{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#LibroSemana{
+	width: 300px;
+	float: right;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000;
+	margin: 10px;
+	background-color: #FFF;
+	box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+#LibroSemana h1{
+	padding: 30px;
+}
+#foto{
+	width: 250px;
+	height: 250px;
+
+}
+#LibroSemana img{
+	padding-left: 15px;
+}
+#LibroSemana p{
+	padding: 10px;
+}
+footer{
+	text-align:center;
+	clear: both;
+	padding: 10px;
+}

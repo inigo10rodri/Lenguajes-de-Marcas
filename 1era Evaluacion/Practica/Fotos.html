@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   <head>
+
+        <meta charset=utf-8>
+        <title></title>
+        <link rel="stylesheet" href="css/style.css"/>
+   </head>
+<body>
+<div id="contenedor">
+	<header>
+		<div id="logo"></div>
+		<h1>BASKETNEWS</h1>
+		<div id="formulario">
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Entrar</legend>						
+						<label>Usuario:</label>
+						<input type="text" name="nombreusu" placeholder="Introduzca un usuario"/>
+						<br/>
+						<label>Contraseña:</label>					
+						<input type="password" name="clave" placeholder="Introduzca su contraseña"/>
+						<br/>
+						<input type="submit" name="enviar" value="Aceptar"/>
+				</fieldset>
+			</form>
+		</div>
+	</header>
+	<div id="todo">
+	<aside id="izquierda">	
+		<nav id="menú">
+		<h1>Menú</h1>
+			<ul>
+				<a href="Index.html"><li>Últimas Noticias</li></a>
+				<a href="Partidos.html"><li>Próximos partidos</li></a>
+				<a href="Video.html"><li>Galería de vídeo</li></a>
+				<a href="Audio.html"><li>Galerías de audio</li></a>
+				<a href="#"><li>Fotos de partidos</li></a>
+				<a href="Entradas.html"><li>Comprar Entradas</li></a>
+			</ul>
+		</nav>
+		<nav id="suscribirse">
+			<h1> Suscribase a nuestro boletín</h1>
+			<form method="post" action="#">
+				<label>Introduzca su correo:</label><br/>
+				<input type="email" name="email" placeholder="xxxxx@yyyyy.zzz"/><br/>
+				<input type="submit" name="boletin" value="Aceptar"/><br/>
+			</form>
+		</nav>
+		<nav id="jugadores">
+			<h1>Jugadores destacados</h1>
+			<form method="post" action="#">
+				<input  list="Nombres artistas" id="destacados" placeholder="Selecciona un artista">
+				<datalist id="Nombres artistas">
+					<option value="Stephen Curry"></option>
+					<option value="Kevin Durant"></option>
+					<option value="Pau Gasol"></option>
+					<option value="Kristaps Porzingis"></option>
+					<option value="Lebron James"></option>
+					<option value="Derrick Rose"></option>
+				</datalist>
+			</form>
+		</nav>
+	</aside>
+	<section id="centro">	
+	<h1>Fotos de partidos</h1>
+	<div id="fotos">
+		<img class="foto" src="imagenes/lebronkobe.jpg">
+		<img class="foto" src="imagenes/curryjeff.jpg">
+		<img class="foto" src="imagenes/curryirving.jpg">
+		<img class="foto" src="imagenes/gasol.jpg">
+		<img class="foto" src="imagenes/wade.jpg">
+		<img class="foto" src="imagenes/kobe.jpg">
+		<img class="foto" src="imagenes/currylebron.jpg">
+		<img class="foto" src="imagenes/carmelo.jpg">
+		<img class="foto" src="imagenes/westbrook.jpg">
+	</div>
+	</section>
+	<aside id="derecha">
+		<nav id="partidos">
+		<h1>Próximos partidos</h1>
+			<ul>
+				<li>Warriors-Heat 16 de Nov.</li>
+				<li>Grizzlies-Bucks 3 de Dic.</li>
+				<li>OKC-Wizards 25 de Enero</li>
+				<li>Cavs-Nets 6 de Feb.</li>
+				<li>Knicks-Kings 21 de Abril</li>
+				<li>Bulls-Spurs 10 de Mayo</li>
+				<li>Lakers-Celtics 29 de Agosto</li>
+			</ul>
+		</nav>
+		<nav id="jugadorSemana">
+			<h1>Jugador de la Semana</h1>
+			<div id="foto"><img src="imagenes/curry.jpg"> 
+			</div>
+			<h4>Stephen Curry</h4>
+
+		</nav>
+	</aside>
+	</div>
+		<footer>
+			Hecho por Iñigo Rodriguez ©
+		</footer>
+</div>
+</body>
+</html>

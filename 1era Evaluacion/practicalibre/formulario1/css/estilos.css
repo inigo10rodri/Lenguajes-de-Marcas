@@ -1,0 +1,16 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+#contenedor{
+	background-color: #cccccc;
+	width: 900px;
+	margin: 0px auto;
+	padding: 10px;
+}
+form{
+	width: 320px;
+	background-color: #ccaacc;
+	margin: 10px;
+	padding: 10px;
+}

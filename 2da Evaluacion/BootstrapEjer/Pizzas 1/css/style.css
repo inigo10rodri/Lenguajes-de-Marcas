@@ -1,0 +1,20 @@
+.header {
+    font-style: bold;
+    font-size: 25px;
+    text-align: center;
+    background-color: grey;
+}
+
+.footer{
+  background-color: grey;
+
+}
+.row{
+	padding-left: 20px;
+}
+.precio{
+	text-align: center;
+}
+.pie{
+	text-align: center;
+}
