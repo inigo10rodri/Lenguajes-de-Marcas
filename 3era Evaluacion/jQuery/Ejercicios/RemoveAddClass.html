@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RemoveAddClass</title>
+	<style>
+			*{
+                margin:0px;
+                padding: 0px;
+ 			}
+ 			body{
+ 				text-align:center;
+ 			}
+			h2{
+				text-align: center;
+			}
+			#centrar{
+			text-align: center;
+			width: 400px;
+			height: 200px;
+			border-color: black;
+			border-width: 2px;
+			border-radius: 5px;
+			margin-left: 450px;
+			margin-top: 50px;
+			border-style: solid;
+			}
+			#centro{
+				background-color: #EBB896;
+			}
+			.botones{
+				text-align: center;
+			}
+			.estilo{
+				background-color: blue;
+			}
+			.estilo2{
+				background-color: #CE640F;
+			}
+           
+	</style>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btnaddclass").click(
+				function(){
+					$("#centrar").addClass("estilo");
+				}
+			);
+			$("#btnremoveclass").click(
+				function(){
+					$("#centrar").addClass("estilo2");
+				}
+			);
+		});
+	</script>
+</head>
+<body id="centro">
+	<h2>RemoveAdd Class</h2>
+	<div id="centrar">	
+		<h1>SOCIO/A: Pepe Gonzalez</h1>
+		<h2>MESES: Julio, Agosto, Septiembre</h2>
+		<p>El premio es para los jugadores que hayan participado en el concurso</p>
+	</div>
+	<div class="botones">
+		<input type="button" value="Añadir clase" id="btnaddclass">
+		<input type="button" value="Quitar clase" id="btnremoveclass">
+	</div>
+</body>
+
+</html>

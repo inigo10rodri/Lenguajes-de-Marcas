@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animate</title>
+	<style>
+			*{
+                margin:0px;
+                padding: 0px;
+ 			}
+ 			body{
+ 				text-align:center;
+ 			}
+			h2{
+				text-align: center;
+			}
+			.boton{
+				text-align: center;
+			}
+			.bloque{
+				background:#98bf21;
+				height:100px; 
+				width:200px; 
+				position:absolute;
+			}
+			           
+	</style>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btnanimate").click(
+				function(){
+					var div = $("div");
+					div.stop().animate({height: '300px'}, 2000);
+					div.stop().animate({left: '100px'}, 2000);
+        			div.stop().animate({fontSize: '3em'}, 2000);
+				}//function
+			);//click
+			$("#btnstop").click(
+				function(){
+					var div = $("div");
+					div.stop().animate({fontSize: '1em'},2000);				
+        		} //function
+			); //click
+		});//ready
+	</script>
+</head>
+<body id="centro">
+	<h2>Animate</h2>
+	<p>Pulse en animacion para que se ejecute la animacion y stop para finalizarla.</p>
+	<div class="bloque">HOLA MUNDO</div>
+	<div class="boton">
+		<input type="button" value="Animacion" id="btnanimate">
+		<input type="button" value="Stop Animacion" id="btnstop">
+	</div>
+</body>
+
+</html>

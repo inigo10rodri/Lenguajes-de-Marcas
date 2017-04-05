@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Titulo</title>
+		<link type="text/css" rel="stylesheet" href="css/estilo.css" />
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+    	<script type="text/javascript">
+    		$(document).ready(function(){
+    			$("#ficha").validate({
+    				rules: {
+    					nombre: {
+    						required: true,
+    						maxlength: 20
+    					},	
+
+    					apellido: "required",
+
+    					edad: {
+    						required: true,
+    						min: 18
+    					},	
+
+    					fechaNac: {
+    						required: true,
+    						date: true
+    					},
+
+    					correo: {
+    						email: true
+						},
+
+    					aficion: "required",
+    					destino: "required",
+    					spam: "required"   
+					}, //fin de las reglas, rules
+
+					messages: {
+						nombre: {
+    						required: "Por favor, introduce el nombre",
+    						maxlength: "Máximo 20 caracteres"
+    					},	
+
+    					apellido: "Por favor, introduce el apellido",
+
+    					edad: {
+    						required: "Introduce la edad",
+    						min: "Debe ser mayor de edad"
+    					},	
+
+    					fechaNac: {
+    						required: "Introduce la fecha de nacimiento",
+    						date: "Introduce una fecha dd/mm/aaaa"
+    					},
+
+    					correo: {
+    						email: "Introduce una dirección de correo correcta"
+						},
+
+    					aficion: "Por favor, indica al menos una afición",
+    					destino: "Por favor, selecciona un destino",
+    					spam: "Por favor, marca una de las opciones"  
+
+					}  //fin de los mensajes
+
+				});  //fin validate
+			});	//fin ready
+			
+		</script>
+	</head>
+	<body>
+
+	<h1>Ficha</h1>
+		<form action="" method="post" name="ficha" id="ficha">
+			<div>
+				<label for="nombre" class="label">Nombre </label>
+				<input name="nombre" type="text"  id="nombre" >
+			</div>
+			<div>
+				<label for="apellido" class="label">Apellido </label>
+				<input name="apellido" type="text"  id="apellido" >
+			</div>
+			<div>
+				<label for="edad" class="label">Edad </label>
+				<input name="edad" type="number"  id="edad" >
+			</div>
+			<div>
+				<label for="fechaNac" class="label">Fecha nacimiento </label>
+				<input name="fechaNac" type="date"  id="fechaNac" >
+			</div>
+			<div>
+				<label for="correo" class="label">Email</label>
+				<input name="correo" type="email"  id="correo" >
+			</div>
+			<div><span class="label">Aficiones</span>
+				<input name="aficion" type="checkbox" id="lectura" value="lectura" >
+				<label for="lectura">Lectura</label>
+				<input name="aficion" type="checkbox" id="cine" value="cine">
+				<label for="cine">Cine</label>
+				<input name="aficion" type="checkbox" id="viajar" value="viajar">
+				<label for="viajar">Viajar</label>
+			</div>
+			<div>
+				<label for="destino" class="label">Destino del viaje</label>
+				<select name="destino" id="destino" >
+					<option value="">--selecciona un destino--</option>
+					<option value="paris">Paris</option>
+					<option value="londres">Londres</option>
+					<option value="madrid">Madrid</option>
+					<option value="roma">Roma</option>
+				</select>
+			</div>
+			
+			<div class="labelBlock">¿Deseas recibir información? </div>
+			<div class="infor">
+				<input  type="radio" name="spam" id="si" value="si">
+				<label for="si">Si</label>
+				<input type="radio" name="spam" id="no" value="no">
+				<label for="no">No</label>
+			</div>
+			<div>
+				<input type="submit" name="submit" id="submit" value="Enviar">
+			</div>
+		</form>
+
+	</body>
+</html>

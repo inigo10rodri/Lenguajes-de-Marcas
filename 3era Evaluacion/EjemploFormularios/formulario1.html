@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Titulo</title>
+		<link type="text/css" rel="stylesheet" href="css/estilo.css" />
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+    	<script type="text/javascript">
+    		$(document).ready(function(){
+
+			});	//fin ready
+			
+		</script>
+	</head>
+	<body>
+
+	<h1>Ficha</h1>
+		<form action="" method="post" name="ficha" id="ficha">
+			<div>
+				<label for="nombre" class="label">Nombre </label>
+				<input name="nombre" type="text" class="required" id="nombre" title="Por favor, introduzca su nombre.">
+			</div>
+			<div>
+				<label for="apellido" class="label">Apellido </label>
+				<input name="apellido" type="text" class="required" id="apellido" title="Por favor, introduzca su apellido.">
+			</div>
+			<div><span class="label">Aficiones</span>
+				<input name="aficion" type="checkbox" id="lectura" value="lectura" class="required" title="Seleccione al menos una afición">
+				<label for="lectura">Lectura</label>
+				<input name="aficion" type="checkbox" id="cine" value="cine">
+				<label for="cine">Cine</label>
+				<input name="aficion" type="checkbox" id="viajar" value="viajar">
+				<label for="viajar">Viajar</label>
+			</div>
+			<div>
+				<label for="destino" class="label">Destino del viaje</label>
+				<select name="destino" id="destino" class="required" title="Please choose a destino.">
+					<option value="">--selecciona un destino--</option>
+					<option value="paris">Paris</option>
+					<option value="londres">Londres</option>
+					<option value="madrid">Madrid</option>
+					<option value="roma">Roma</option>
+				</select>
+			</div>
+	
+			<div class="labelBlock">¿Deseas recibir información por correo electrónico? </div>
+			<div class="correo">
+				<input  type="radio" name="spam" id="si" value="si" class="required" title="Seleccione un destino.">
+				<label for="si">Si</label>
+				<input type="radio" name="spam" id="no" value="no">
+				<label for="no">No</label>
+				<input type="radio" name="spam" id="opcion" value="opcion">
+				<label for="opcion">¿Puedo elegir?</label>
+			</div>
+			<div>
+				<input type="submit" name="submit" id="submit" value="Enviar">
+			</div>
+		</form>
+
+	</body>
+</html>
