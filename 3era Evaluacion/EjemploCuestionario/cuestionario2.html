@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Radio Buttons</title>
+		<link type="text/css" rel="stylesheet" href="css/estilo.css" />
+		<script src="js/jquery-3.1.1.min.js"></script>
+    	<script type="text/javascript">
+			var contador = 0;
+			function comprobar(num){
+                $( "#ver_resultado"+num ).animate({
+                    height: "64px"
+                }, 
+                500   
+                );  
+
+				var result = $('input[name=resp'+num+']:checked').val();
+				$('#ver_resultado'+num).html('<h2>'+result+'</h2>');
+		
+				if (result == '¡Correcto!'){
+					contador++;
+					$('#contador').html('<h2> Tu puntuación = '+contador+'</h2>');
+				}
+				//tiene una animación para mostrar y ocultar
+			}
+			
+		</script>
+	</head>
+	<body>
+		<h1>Cuestionario sobre -TuTema-</h1>
+		<h2>1.¿En qué ciudad nacio el cantante del grupo ....?</h2>
+		<div class='bloque' id='ver_resultado1'>
+		<input type='radio' name='resp1' value='Incorrecto :(' />
+		<label>Donostia/San Sebastian</label>
+		<br/>
+		<input type='radio' name='resp1' value='¡Correcto!' />
+		<label>Madrid</label>
+		<br/>
+		<input type='radio' name='resp1' value='Incorrecto :(' />
+		<label>Zaragoza</label>
+		<br/>
+		<input type='radio' name='resp1' value='Incorrecto :(' />
+		<label>Toledo</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(1)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 1-->
+		
+		<br/>
+		<h2>2.¿pregunta dos?</h2>
+		<div class='bloque' id='ver_resultado2'>
+		<input type='radio' name='resp2' value='¡Correcto!' />
+		<label>respuesta 2.1</label>
+		<br/>
+		<input type='radio' name='resp2' value='Incorrecto :(' />
+		<label>respuesta 2.2</label>
+		<br/>
+		<input type='radio' name='resp2' value='Incorrecto :(' />
+		<label>respuesta 2.3</label>
+		<br/>
+		<input type='radio' name='resp2' value='Incorrecto :(' />
+		<label>respuesta 2.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(2)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 2-->
+		
+		<br/>
+		<h2>3.¿pregunta tres?</h2>
+		<div class='bloque' id='ver_resultado3'>
+		<input type='radio' name='resp3' value='Incorrecto :(' />
+		<label>respuesta 3.1</label>
+		<br/>
+		<input type='radio' name='resp3' value='Incorrecto :(' />
+		<label>respuesta 3.2</label>
+		<br/>
+		<input type='radio' name='resp3' value='¡Correcto!' />
+		<label>respuesta 3.3</label>
+		<br/>
+		<input type='radio' name='resp3' value='Incorrecto :(' />
+		<label>respuesta 3.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(3)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 3-->
+		
+		<br/>
+		<h2>4.¿pregunta cuatro?</h2>
+		<div class='bloque' id='ver_resultado4'>
+		<input type='radio' name='resp4' value='Incorrecto :(' />
+		<label>respuesta 4.1</label>
+		<br/>
+		<input type='radio' name='resp4' value='¡Correcto!' />
+		<label>respuesta 4.2</label>
+		<br/>
+		<input type='radio' name='resp4' value='Incorrecto :(' />
+		<label>respuesta 4.3</label>
+		<br/>
+		<input type='radio' name='resp4' value='Incorrecto :(' />
+		<label>respuesta 4.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(4)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 4-->
+		
+		<br/>
+		<h2>5¿pregunta cinco?</h2>
+		<div class='bloque' id='ver_resultado5'>
+		<input type='radio' name='resp5' value='Incorrecto :(' />
+		<label>respuesta 5.1</label>
+		<br/>
+		<input type='radio' name='resp5' value='Incorrecto :(' />
+		<label>respuesta 5.2</label>
+		<br/>
+		<input type='radio' name='resp5' value='Incorrecto :(' />
+		<label>respuesta 5.3</label>
+		<br/>
+		<input type='radio' name='resp5' value='¡Correcto!' />
+		<label>respuesta 5.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(5)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 5-->
+		
+		<br/>
+		<h2>6.¿pregunta seis?</h2>
+		<div class='bloque' id='ver_resultado6'>
+		<input type='radio' name='resp6' value='Incorrecto :(' />
+		<label>respuesta 6.1</label>
+		<br/>
+		<input type='radio' name='resp6' value='Incorrecto :(' />
+		<label>respuesta 6.2</label>
+		<br/>
+		<input type='radio' name='resp6' value='Incorrecto :(' />
+		<label>respuesta 6.3</label>
+		<br/>
+		<input type='radio' name='resp6' value='¡Correcto!' />
+		<label>respuesta 6.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(6)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 6-->
+		
+		<br/>
+		<h2>7.¿pregunta siete?</h2>
+		<div class='bloque' id='ver_resultado7'>
+		<input type='radio' name='resp7' value='¡Correcto!' />
+		<label>respuesta 7.1</label>
+		<br/>
+		<input type='radio' name='resp7' value='Incorrecto :(' />
+		<label>respuesta 7.2?</label>
+		<br/>
+		<input type='radio' name='resp7' value='Incorrecto :(' />
+		<label>respuesta 7.3</label>
+		<br/>
+		<input type='radio' name='resp7' value='Incorrecto :(' />
+		<label>respuesta 7.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(7)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 7-->
+		
+		<br/>
+		<h2>8.¿pregunta ocho?</h2>
+		<div class='bloque' id='ver_resultado8'>
+		<input type='radio' name='resp8' value='Incorrecto :(' />
+		<label>respuesta 8.1</label>
+		<br/>
+		<input type='radio' name='resp8' value='Incorrecto :(' />
+		<label>respuesta 8.2</label>
+		<br/>
+		<input type='radio' name='resp8' value='Incorrecto :(' />
+		<label>respuesta 8.3</label>
+		<br/>
+		<input type='radio' name='resp8' value='¡Correcto!' />
+		<label>respuesta 8.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(8)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 8-->
+		
+		<br/>
+		<h2>9.¿pregunta nueve?</h2>
+		<div class='bloque' id='ver_resultado9'>
+        <input type='radio' name='resp9' value='¡Correcto!' />
+		<label>respuesta 9.1</label>
+		<br/>
+		<input type='radio' name='resp9' value='Incorrecto :(' />
+		<label>respuesta 9.2</label>
+		<br/>
+		<input type='radio' name='resp9' value='Incorrecto :(' />
+		<label>respuesta 9.3</label>
+		<br/>
+		<input type='radio' name='resp9' value='Incorrecto :(' />
+		<label>respuesta 9.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(9)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 9-->
+		
+		<br/>
+		<h2>10.¿pregunta diez?</h2>
+		<div class='bloque' id='ver_resultado10'>
+		<input type='radio' name='resp10' value='Incorrecto :(' />
+		<label>respuesta 10.1</label>
+		<br/>
+		<input type='radio' name='resp10' value='Incorrecto :(' />
+		<label>respuesta 10.2</label>
+		<br/>
+		<input type='radio' name='resp10' value='¡Correcto!' />
+		<label>respuesta 10.3</label>
+		<br/>
+		<input type='radio' name='resp10' value='Incorrecto :(' />
+		<label>respuesta 10.4</label>
+		<br/>
+		<input type='button' value='Comprueba' onclick='comprobar(10)' />
+		<br/>
+		</div>
+        <!--Fin de la pregunta 10-->
+		
+		<br/>
+		<div class='bloque' id="contador"><h2>Tu puntuación = 0</h2></div>
+	</body>
+</html>
