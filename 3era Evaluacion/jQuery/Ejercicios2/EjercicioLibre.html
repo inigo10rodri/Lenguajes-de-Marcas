@@ -16,6 +16,7 @@
 			}
 			.boton{
 				text-align: center;
+			
 			}
 			.bloque{
 				background:#98bf21;
@@ -23,17 +24,20 @@
 				width:200px; 
 				position:absolute;
 			}
+			.centro{
+				text-align: center;
+			}
 			           
 	</style>
-	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery-3.1.1.min.js/Ejercicios2"></script>
 	<script>
 		$(document).ready(function(){
 			$("#btnanimate").click(
 				function(){
 					var div = $("div");
-					div.stop().animate({height: '300px'}, 2000);
-					div.stop().animate({left: '100px'}, 2000);
-        			div.stop().animate({fontSize: '3em'}, 2000);
+					div.animate({height: '300px'}, 1000);
+					div.animate({left: '100px'}, 1000);
+        			div.animate({fontSize: '3em'}, 1000);
 				}//function
 			);//click
 			$("#btnstop").click(
@@ -49,10 +53,9 @@
 	<h2>Animate</h2>
 	<p>Pulse en animacion para que se ejecute la animacion y stop para finalizarla.</p>
 	<div class="bloque">HOLA MUNDO</div>
-	<div class="boton">
-		<input type="button" value="Animacion" id="btnanimate">
-		<input type="button" value="Stop Animacion" id="btnstop">
-	</div>
+	<input type="button" value="Animacion" id="btnanimate">
+	<input type="button" value="Stop Animacion" id="btnstop">
+	
 </body>
 
 </html>
