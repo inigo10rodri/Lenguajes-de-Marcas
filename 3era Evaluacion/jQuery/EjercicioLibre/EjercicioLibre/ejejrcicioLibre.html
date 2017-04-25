@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio Libre</title>
+    <meta charset="UTF-8">
+    <script src=""></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(
+            function() {
+                //Para menus horizontales
+                $('#categoria10').hover(
+                    function() {
+                        $('#sub10').fadeToggle(100);
+                    });
+
+                $('#categoria20').hover(
+                    function() {
+                        $('#sub20').fadeToggle(100);
+                    });
+
+                $('#categoria30').hover(
+                    function() {
+                        $('#sub30').fadeToggle(100);
+                    });
+
+                //Fin para menus horizontales
+                /**************************************/
+
+                $('.move').mouseenter(
+                    function() {
+                        $(this).addClass('styleMove'); // Añade la clase styleMove a todos los move
+                    });
+                $('.move').mouseleave(
+                    function() {
+                        $(this).removeClass('styleMove'); // Añade la clase styleMove a todos los move
+                    });
+
+                //cambiar imagen 
+                $("#imgchange1").click(function() {
+                    $("#change0").attr("src", "img/absolut.jpg");
+                }); //fin imagen cambia 1
+
+                $("#imgchange2").click(function() {
+                    $("#change0").attr("src", "img/vidrio.png");
+
+                });
+                //fin imagen cambia 2 
+                /********************************/
+
+                $("#btncabecera").click(function() {
+                    $("#cabecerahead").toggle(2000);
+                });
+
+                $("#btnform").click(function() {
+                    var par = 0;
+                    if (par == 0) {
+                        $("#formOculto").slideToggle();
+                        var titulo = $(this).attr("value", "Mostrar Form.");
+                        par = 1;
+                    } else {
+                        var titulo = $(this).attr("value");
+                        par = 0;
+                    }
+                });
+
+                /***************************************/
+                // Probar
+                $("#btnSuper").click(
+                    function() {
+                        $("#logo").animate({
+                            opacity: .5,
+                            width: "48%"
+                        }, 2000); //animate
+
+                        $("#btnSuperStop").click(function() {
+                            // $("h1").stop();
+                            $("#logo").stop().animate({
+                                opacity: 1,
+                                width: "100px",
+                                height: "100px"
+                            }, 3000);
+
+                        }); //stop
+
+                    });
+
+                /********************************/                      
+        
+                /************************************/
+            } /*function*/
+        ); /*ready*/
+
+    </script>
+
+</head>
+
+<body>
+    <div id="contain">
+        <header>
+            <div id="logo">
+            </div>
+            <div id="nombre">
+                <h1 id="cabecerahead">RIESGOS COTIDIANOS</h1>
+            </div>
+            <nav id="menu0">
+                <ul id="categoria10">
+                    <li id="linea10">CARRETERA</li>
+                    <ol id="sub10" class="subpanel">
+                        <li class="move">Cannondale</li>
+                        <li class="move">Trek</li>
+                        <li class="move">Orbea</li>
+                    </ol>
+                </ul>
+                <ul id="categoria20">
+                    <li id="linea20">RIGIDAS BTT</li>
+                    <ol id="sub20" class="subpanel">
+                        <li class="move">Cannondale</li>
+                        <li class="move">Trek</li>
+                        <li class="move">Orbea</li>
+                    </ol>
+                </ul>
+                <ul id="categoria30">
+                    <li id="linea30">DOBLES BTT</li>
+                    <ol id="sub30" class="subpanel">
+                        <li class="move">Cannondale</li>
+                        <li class="move">Trek</li>
+                        <li class="move">Orbea</li>
+                    </ol>
+                </ul>
+            </nav>
+            <!--nav menu0-->
+        </header>
+        <section id="central">
+            <article class="left">
+                <div id="muestra1"> <img src="img/absolut.jpg" id="change0" width="300px" height="400px"> </div>
+                <img src="img/absolut.jpg" width="100px" height="100px" id="imgchange1">
+                <img src="img/vidrio.png" width="100px" height="100px" id="imgchange2">
+
+            </article>
+            <article class="midle">
+                <input type="button" id="btncabecera" value=" Cabecera">
+                <input type="button" id="btnform" value="Quitar Form.">
+                <input type="button" id="btnSuper" value="Mover Super">
+                <input type="button" id="btnSuperStop" value="Stop Super">
+               
+               
+            </article>
+            <article class="right">
+                <form id="formOculto">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="">
+                    <label>Apellido</label>
+                    <input type="text" placeholder="">
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Ingresa tlf">
+                    <label>Correo</label>
+                    <input type="mail" placeholder="Ingresa correo-e">
+                </form>
+            </article>
+        </section>
+
+    </div>
+    <!--contain-->
+</body>
+
+</html>
