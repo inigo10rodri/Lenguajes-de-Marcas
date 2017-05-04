@@ -1,0 +1,38 @@
+﻿<!--- SIN CORREGIR -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sistemaSolar [
+  <!ELEMENT sistemaSolar (cuerpo*)>
+  <!ELEMENT cuerpo (planeta|satelite|asteroide)>
+  <!ELEMENT planeta (#PCDATA)>
+  <!ELEMENT satelite (#PCDATA)>
+  <!ELEMENT asteroide (#PCDATA)>
+]>
+
+<sistemaSolar>
+  <cuerpo>
+    <planeta>Tierra</planeta>
+    <satelite>Luna</satelite>
+  </cuerpo>
+  <asteroide>Ceres</asteroide>
+</sistemaSolar>
+<!--- CORREGIDO -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sistemaSolar [
+  <!ELEMENT sistemaSolar (cuerpo*)>
+  <!ELEMENT cuerpo (planeta|satelite|asteroide)>
+  <!ELEMENT planeta (#PCDATA)>
+  <!ELEMENT satelite (#PCDATA)>
+  <!ELEMENT asteroide (#PCDATA)>
+]>
+
+<sistemaSolar>
+  <cuerpo>
+    <planeta>Tierra</planeta>
+  </cuerpo>
+  <cuerpo>
+    <satelite>Luna</satelite>
+  </cuerpo>
+  <cuerpo>
+    <asteroide>Ceres</asteroide>
+  </cuerpo>
+</sistemaSolar>

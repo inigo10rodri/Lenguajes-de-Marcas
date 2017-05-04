@@ -1,0 +1,12 @@
+﻿<!-- Sin corregir -->
+<?Xml version="1,0" encoding="UTF8"?>
+<triangulo base="7"altura="5">
+<triangulo base="2"altura="6">
+<triangulo base="3"altura="3">
+<!-- Corregido -->
+<?xml version="1.0" encoding="UTF-8"?>
+<triangulos>
+   <triangulo base="7" altura="5"/>
+   <triangulo base="2" altura="6"/>
+   <triangulo base="3" altura="3"/>
+</triangulos>
