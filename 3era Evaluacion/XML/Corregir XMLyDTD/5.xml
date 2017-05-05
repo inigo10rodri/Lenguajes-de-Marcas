@@ -1,0 +1,108 @@
+﻿<!--- Se quiere definir un lenguaje de marcas para representar los resultados de una liga de fútbol. La información que se quiere almacenar de cada partido es:
+
+    el nombre del equipo local
+    el nombre del equipo visitante
+    los goles marcados por el equipo local
+    los goles marcados por el equipo visitante
+
+Escribe tres documentos que incluyan los siguientes resultados:
+
+    Nottingham Presa: 0 - Inter de Mitente: 1
+    Vodka Juniors: 3 - Sparta da Risa: 3
+    Water de Munich: 4 - Esteaua es del grifo: 2
+
+Cada documento incluirá un DTD diferente para representar ese lenguaje de marcas:
+
+    una DTD en la que no haya atributos, sino únicamente etiquetas
+    una DTD en la que los goles sean atributos
+    una DTD en la que toda la información se guarde en forma de atributos-->  
+    
+    <!--- DTD sin atributos, únicamente contiene etiquetas  -->  
+    
+    <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaDeFutbol [
+  <!ELEMENT ligaDeFutbol (partido*)>
+  <!ELEMENT partido (local, visitante)>
+  <!ELEMENT local (nombre, goles)>
+  <!ELEMENT visitante (nombre, goles)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT goles (#PCDATA)>
+]>
+
+<ligaDeFutbol>
+  <partido>
+    <local>
+      <nombre>Nottingham Presa</nombre>
+      <goles>0</goles>
+    </local>
+    <visitante>
+      <nombre>Inter de Mitente</nombre>
+      <goles>1</goles>
+    </visitante>
+  </partido>
+  <partido>
+    <local>
+      <nombre>Vodka Juniors</nombre>
+      <goles>3</goles>
+    </local>
+    <visitante>
+      <nombre>Sparta da Risa</nombre>
+      <goles>3</goles>
+    </visitante>
+  </partido>
+  <partido>
+    <local>
+      <nombre>Water de Munich</nombre>
+      <goles>4</goles>
+    </local>
+    <visitante>
+      <nombre>Esteaua es del grifo</nombre>
+      <goles>2</goles>
+    </visitante>
+  </partido>
+</ligaDeFutbol>
+
+    <!--- DTD en la que los goles sean atributos   -->  
+    
+    <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaDeFutbol [
+  <!ELEMENT ligaDeFutbol (partido*)>
+  <!ELEMENT partido (local, visitante)>
+  <!ELEMENT local (#PCDATA)>
+  <!ELEMENT visitante (#PCDATA)>
+  <!ATTLIST local goles CDATA #REQUIRED>
+  <!ATTLIST visitante goles CDATA #REQUIRED>
+]>
+
+<ligaDeFutbol>
+  <partido>
+    <local goles="0">Nottingham Presa</local>
+    <visitante goles="1">Inter de Mitente</visitante>
+  </partido>
+  <partido>
+    <local goles="3">Vodka Juniors</local>
+    <visitante goles="3">Sparta da Risa</visitante>
+  </partido>
+  <partido>
+    <local goles="4">Water de Munich</local>
+    <visitante goles="2">Esteaua es del grifo</visitante>
+  </partido>
+</ligaDeFutbol>
+
+  <!--- DTD en la que toda la información se guarde en forma de atributos    -->  
+  
+  <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaDeFutbol [
+  <!ELEMENT ligaDeFutbol (partido*)>
+  <!ELEMENT partido EMPTY>
+  <!ATTLIST partido localNombre CDATA #REQUIRED>
+  <!ATTLIST partido localGoles CDATA #REQUIRED>
+  <!ATTLIST partido visitanteNombre CDATA #REQUIRED>
+  <!ATTLIST partido visitanteGoles CDATA #REQUIRED>
+]>
+
+<ligaDeFutbol>
+  <partido localNombre="Nottingham Presa" localGoles="0" visitanteNombre="Inter de Mitente" visitanteGoles="1" />
+  <partido localNombre="Vodka Juniors" localGoles="3"  visitanteNombre="Sparta da Risa" visitanteGoles="3" />
+  <partido localNombre="Water de Munich" localGoles="4" visitanteNombre="Esteaua es del grifo" visitanteGoles="2" />
+</ligaDeFutbol>
