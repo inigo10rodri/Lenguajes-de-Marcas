@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="movies.xsl"?>
+<website>
+	<info>
+		<name>My Movie Database</name>
+		<logo path="images/logo.jpg"/>
+		<email>info@mymoviedatabase.com</email>
+	</info>
+	<movies>
+		<category cat="Science Fiction">
+      <movie rating="+13">
+        <isbn>28465234</isbn>
+        <title>Star Wars Episode VII</title>
+        <poster>images/starwars7.jpg</poster>
+        <score>83/100</score>
+        <directors>
+          <director>J.J. Abrams</director>
+        </directors>
+        <actors>
+          <actor>Harrison Ford</actor>
+          <actor>Mark Hamill</actor>
+          <actress>Carrie Fisher</actress>
+        </actors>
+      </movie>
+      <movie rating="+7">
+        <isbn>34134123</isbn>
+        <title>Back To The Future II</title>
+        <poster>images/future.jpg</poster>
+        <score>91/100</score>
+        <directors>
+          <director>Robert Zemeckis</director>
+        </directors>
+        <actors>
+          <actor>Michael J. Fox</actor>
+          <actor>Christopher Lloyd</actor>
+          <actress>Lea Thompson</actress>
+        </actors>
+      </movie>
+		</category>
+		<category cat="Comedy">
+      <movie rating="+13">
+        <isbn>54356356</isbn>
+        <title>Zombieland</title>
+        <poster>images/zombie.jpg</poster>
+        <score>85/100</score>
+        <directors>
+          <director>Ruben Fleischer</director>
+        </directors>
+        <actors>
+          <actor>Woody Harrelson</actor>
+          <actress>Emma Stone</actress>
+        </actors>
+      </movie>
+		</category>
+	</movies>
+</website>
