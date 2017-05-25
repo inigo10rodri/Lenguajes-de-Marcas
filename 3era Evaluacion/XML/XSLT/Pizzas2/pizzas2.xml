@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pizzas2.xsl"?>
+<pizzeria>
+      <informacion>
+            <nombre>Pizzeria Italiana</nombre>
+            <logo carpeta="images/images/logo.jpg"/>
+            <email>info@pizzeriaitaliana.com</email>
+      </informacion>
+      <pizzas>
+            <titulo nombre="PIZZERIA">
+                  <pizza  stock="25">
+                        <nombre>TRES QUESOS</nombre>
+                        <salsa>salsa de totameI</salsa>
+                        <foto>images/images/3-quesos.jpg</foto>
+                        <ingredientes>
+                              <ingrediente>mozzarella</ingrediente>
+                              <ingrediente>mezcla 3 tres quesos</ingrediente>
+                        </ingredientes>
+                  </pizza>
+                  <pizza  stock="7">
+                        <nombre>BARBACOA</nombre>
+                        <salsa>salsa barbacoa</salsa>
+                        <foto>images/images/barbacoa.jpg</foto>
+                        <ingredientes>
+                              <ingrediente>mozzarella</ingrediente>
+                              <ingrediente>ternera</ingrediente>
+                              <ingrediente>jamón</ingrediente>
+                              <ingrediente>salchicha</ingrediente>
+                        </ingredientes>
+                  </pizza>
+                  <pizza  stock="15">
+                        <nombre>BOLOÑESA</nombre>
+                        <salsa>salsa boloñesa</salsa>
+                        <foto>images/images/bolonesa.jpg</foto>
+                        <ingredientes>
+                              <ingrediente>mozzarella</ingrediente>
+                              <ingrediente>ternera</ingrediente>
+                              <ingrediente>jamón</ingrediente>
+                              <ingrediente>champiñones</ingrediente>
+                              <ingrediente>queso de cabra</ingrediente>
+                        </ingredientes>
+                  </pizza>
+            </titulo>
+      </pizzas>
+</pizzeria>
