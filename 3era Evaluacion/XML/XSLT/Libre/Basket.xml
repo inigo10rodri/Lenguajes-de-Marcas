@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML -->
+<galeria>
+      <informacion>
+            <nombre>Galeria de Baloncesto</nombre>
+            <logo carpeta="images/logo.jpg"/>
+            <email>info@galeriadebaloncesto.com</email>
+      </informacion>
+      <equipos>
+            <titulo nombre="GALERIA">
+                  <equipo  siglas="LAL">
+                        <nombre>LOS ANGELES LAKERS</nombre>
+                        <camiseta>images/lakers.jpg</camiseta>
+                        <foto>images/equipoLAL.jpg</foto>
+                        <jugadores>
+                              <jugador>Kobe Bryant</jugador>
+                              <jugador>Shaquille O´neal</jugador>
+                        </jugadores>
+                  </equipo>
+                  <equipo  siglas="GSW">
+                        <nombre>GOLDEN STATE WARRIORS</nombre>
+                        <camiseta>images/warriors.jpg</camiseta>
+                        <foto>images/equipoGSW.jpg</foto>
+                        <jugadores>
+                              <jugador>Stephen Curry</jugador>
+                              <jugador>Kevin Durant</jugador>
+                        </jugadores>
+                  </equipo>
+                  <equipo  siglas="CAV">
+                        <nombre>CLEVELAND CAVALIERS</nombre>
+                        <camiseta>images/cavaliers.jpg</camiseta>
+                        <foto>images/equipoCAV.jpg</foto>
+                        <jugadores>
+                              <jugador>Lebron James</jugador>
+                              <jugador>Kyrie Irving</jugador>
+                        </jugadores>
+                  </equipo>
+            </titulo>
+      </equipos>
+</galeria>
+
+<!-- DTD -->
