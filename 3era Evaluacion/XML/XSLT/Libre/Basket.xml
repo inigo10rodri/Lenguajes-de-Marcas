@@ -7,7 +7,7 @@
             <email>info@galeriadebaloncesto.com</email>
       </informacion>
       <equipos>
-            <titulo nombre="GALERIA">
+            <titulo nombre="GALERIA"></titulo>
                   <equipo  siglas="LAL">
                         <nombre>LOS ANGELES LAKERS</nombre>
                         <camiseta>images/lakers.jpg</camiseta>
@@ -34,9 +34,29 @@
                               <jugador>Lebron James</jugador>
                               <jugador>Kyrie Irving</jugador>
                         </jugadores>
-                  </equipo>
-            </titulo>
+                  </equipo>            
       </equipos>
 </galeria>
 
 <!-- DTD -->
+<!DOCTYPE galeria [
+<!ELEMENT galeria (informacion,equipos)>
+<!ELEMENT informacion (nombre, logo, email)>
+<!ELEMENT equipos (titulo,equipo*)>
+<!ELEMENT equipo (nombre,camiseta,foto,jugadores)>
+<!ELEMENT jugadores (jugador*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT camiseta (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT jugador (#PCDATA)>
+
+
+  
+   <!-- Definición de atributos -->
+ <!ATTLIST titulo nombre ID #REQUIRED>
+ <!ATTLIST equipo siglas ID #REQUIRED>
+]>
