@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Gimnasio Zubiri</title>
+        <link type="text/css" rel="stylesheet" href="css/estilo.css"/>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*Código jQuery*/
+                $("#imgchange1").click(function() {
+                    $("#changeImagen").attr("src", "imagenes/socio1.jpg");
+                }); //fin imagen cambia 1
+
+                $("#imgchange2").click(function() {
+                    $("#changeImagen").attr("src", "imagenes/socio2.jpg");
+
+                });
+                $("#imgchange3").hover(function() {
+                    $("#changeImagen").attr("src", "imagenes/socio3.jpg");
+
+                });
+                $("#imgchange4").hover(function() {
+                    $("#changeImagen").attr("src", "imagenes/socio4.jpg");
+
+                });
+                $("pequeño").click(function() {
+                    $("#pequeño").animate({opacity: .1}, 2000);
+                    $("#Logochange").attr("width", "50px");
+                    $("#Logochange").attr("height", "50px");
+                });
+                $("grande").click(function() {
+                    $("#grande").animate({opacity: .1}, 2000);
+                    $("#Logochange").attr("width", "150px");
+                    $("#Logochange").attr("height", "150px");
+                });
+                $("mostrar").click(function() {
+                    $("#mostrar").animate({opacity: .1}, 2000);
+                    $("#Logochange").animate({
+                            opacity: .5,
+                            width: "48%"
+                        }, 2000);
+                });
+                $("ocultar").click(function() {
+                    $("#ocultar").animate({opacity: .1}, 2000);
+                    $("#Logochange").animate({
+                            opacity: 1,
+                            width: "48%"
+                        }, 2000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <header>
+                <div id="titulo">GIMNASIO ZUBIRI</div>
+                <div id="logo"></div>
+            </header>
+
+            <div id="cuerpo">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">SOCIOS</a></li>
+                        <li><a href="#">EQUIPAMIENTO</a></li>
+                        <li><a href="#">PRESENTACIÓN</a></li>
+                    </ul>
+                </nav>
+
+                <section>
+
+                    <article class="articulo">
+                        <table id="tabla" border="1">
+                            <tr>
+                                <td colspan="4">SOCIO SELECCIONADO</td>                     
+                            </tr>   
+                            <tr>
+                                <td width="150" height="150" colspan="4" ><img src="imagenes/interrogante.jpg" width="150" height="150" id="changeImagen"/></td>   
+                            </tr> 
+                            <tr>
+                                <td colspan="4">ELIGE un SOCIO</td>    
+                            </tr>
+                            <tr>
+                                <td id="imgchange1"><img src="imagenes/socio1.jpg" width="50px" height="50px"/></td>
+                                <td id="imgchange2"><img src="imagenes/socio2.jpg" width="50px" height="50px"/></td>
+                                <td id="imgchange3"><img src="imagenes/socio3.jpg" width="50px" height="50px"/></td>
+                                <td id="imgchange4"><img src="imagenes/socio4.jpg" width="50px" height="50px"/></td>
+                            </tr>
+                        </table>
+                    </article>  
+                      
+                    <br/>
+
+                    <div id='presentacion'>
+                        PRESENTACIÓN
+                    </div>  
+                     
+                    <article class="articulo">
+                        <img src="imagenes/logo.png" width="100px" height="100px" id="Logochange" />
+                        <br/>
+                        <input id="pequeño" type='button' value ='PEQUEÑO'/>
+                        <input id="grande" type='button' value ='GRANDE'/>
+                        <input id="mostrar" type='button' value ='MOSTRAR'/>
+                        <input id="ocultar" type='button' value ='OCULTAR'/>
+                    </article>
+                </section>
+            </div> <!-- cuerpo -->
+            <footer>
+                Iñigo Rodriguez
+            </footer>   
+ 
+        </div> <!-- contenedor -->
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+
+  <!ELEMENT gimnasio2 (info, socios )>
+  <!ELEMENT info (logo, gim_nombre, direccion, web, email)>
+  <!ELEMENT socios (socio*)>
+  <!ELEMENT socio (foto, nombre, apellido, direccion, contacto, deportes)>
+  <!ELEMENT contacto (telefonos, emails)>
+  <!ELEMENT telefonos (numero_telefono)+>
+  <!ELEMENT emails (email)+>
+  <!ELEMENT deportes (deporte)>
+  <!ELEMENT deporte (date)+>
+  <!ELEMENT logo (#PCDATA)>
+  <!ELEMENT gim_nombre (#PCDATA)>
+  <!ELEMENT direccion (#PCDATA)>
+  <!ELEMENT web (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT foto (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT apellido (#PCDATA)>
+  <!ELEMENT numero_telefono (#PCDATA)>
+  <!ELEMENT date (#PCDATA)>
+ 
+  
+   <!-- Definición de atributos -->
+  <!ATTLIST socio id_socio ID #REQUIRED>
+ <!ATTLIST email tipo (casa|trabajo) #REQUIRED> 
+ <!ATTLIST numero_telefono tipo (casa|movil) #REQUIRED>
+ <!ATTLIST deporte nombredeporte CDATA "">

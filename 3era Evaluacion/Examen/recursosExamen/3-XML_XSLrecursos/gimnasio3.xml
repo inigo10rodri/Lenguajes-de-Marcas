@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="gimnasio3.xsl"?>
+<gimnasio3>
+      <info>
+            <logo>imagenes/logo.png</logo>
+            <gim_nombre>Gimnasio Zubiri</gim_nombre>
+            <direccion>J.M. Barandiaran 10-12</direccion>
+            <web>http://www.zubirium.com</web>
+            <email tipo="trabajo">info@zubirium.com</email>
+      </info>
+      <socios>
+            <socio idsocio="id1111">
+                  <foto>imagenes/socio1.jpg</foto>
+                  <nombre>Mikel</nombre>
+                  <apellido>Aranzeta</apellido>
+                  <direccion>Avenida Mikel, 25</direccion>
+                  <contacto>
+                        <telefonos>
+                              <numero_telefono tipo="casa">324123400</numero_telefono>
+                              <numero_telefono tipo="movil">675677560</numero_telefono>
+                        </telefonos>
+                        <emails>
+                              <email tipo="trabajo">mikel@zubiri.com</email>
+                              <email tipo="casa">mikel@mikel.com</email>
+                        </emails>
+                  </contacto>
+                  <deportes>
+                        <deporte nombredeporte="Yoga">
+                              <date>Lunes 19:00-20:00</date>
+                              <date>Miércoles 19:00-20:00</date>
+                              <date>Viernes 19:00-20:00</date>
+                        </deporte>
+                  </deportes>
+            </socio>
+            <socio idsocio="id2222">
+                    <foto>imagenes/socio2.jpg</foto>
+                    <nombre>Ana</nombre>
+                    <apellido>Zabala</apellido>
+                    <direccion>Calle Ana, 7</direccion>
+                    <contacto>
+                          <telefonos>
+                                <numero_telefono tipo="casa">664545320</numero_telefono>
+                                <numero_telefono tipo="movil">333334400</numero_telefono>
+                          </telefonos>
+                          <emails>
+                                <email tipo="trabajo">ana@zubiri.com</email>
+                                <email tipo="casa">ana@ana.com</email>
+                          </emails>
+                    </contacto>
+                    <deportes>
+                          <deporte nombredeporte="Zumba">
+                                <date>Juevesdi 18:00-19:00</date>
+                                <date>Sábado 18:00-19:00</date>
+                          </deporte>
+                    </deportes>
+            </socio>
+            <socio idsocio="id3333">
+                    <foto>imagenes/socio3.jpg</foto>
+                    <nombre>Peio</nombre>
+                    <apellido>Olaberria</apellido>
+                    <direccion>Paseo Peio, 12</direccion>
+                    <contacto>
+                            <telefonos>
+                                  <numero_telefono tipo="casa">888866400</numero_telefono>
+                                  <numero_telefono tipo="movil">994445220</numero_telefono>
+                            </telefonos>
+                            <emails>
+                                  <email tipo="trabajo">peio@zubiri.com</email>
+                                  <email tipo="trabajo">peio@peio.com</email>
+                            </emails>
+                    </contacto>
+                    <deportes>
+                            <deporte nombredeporte="Aquaerogym">
+                                  <date>Lunes 19:00-20:00</date>
+                                  <date>Miércoles 19:00-20:00</date>
+                                  <date>Viernes 19:00-20:00</date>
+                            </deporte>
+                            <deporte nombredeporte="Pilates">
+                                  <date>Martes 19:00-20:00</date>
+                                  <date>Jueves 19:00-20:00</date>
+                            </deporte>
+                    </deportes>
+          </socio>
+      </socios>
+</gimnasio3>
